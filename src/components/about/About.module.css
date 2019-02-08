@@ -1,0 +1,116 @@
+.aboutMe {
+  background-image: url('/images/main-background.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  animation: moveAround 20s ease-in-out infinite alternate;
+}
+
+.sectionMyLife {
+  display: grid;
+  background: #ffffff;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+
+.sectionMyPhilosophy {
+  display: grid;
+  background-color: transparent;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+
+.leftMyLife {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.leftMyPhilosophy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightTop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px;
+  background-image: url('/images/right-background-blue.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px;
+  background: #ffffff;
+}
+
+h1 {
+  color: #121f50;
+}
+
+.bottom {
+  height: 100vh;
+  background-color: rgba(255, 255, 255);
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.backgroundImage {
+  background-image: url('/images/right-background-blue.png');
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  animation: pulseFade 10s ease-in-out infinite;
+  position: absolute;
+  transform: translate(50% 50%);
+  transform-origin: 50%;
+}
+
+.imageAndText {
+  z-index: 1;
+}
+
+.mainImage {
+  background-color: black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes moveAround {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes pulseFade {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

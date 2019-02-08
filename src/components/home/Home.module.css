@@ -1,0 +1,13 @@
+.homePage {
+  background-image: url('/images/main-background.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
