@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import posed from 'react-pose'
 import styles from './About.module.css'
-
+import ParallaxParty from '../utilities/ParallaxParty'
 const Container = posed.div({
   enter: { staggerChildren: 50 }
 })
+
 const Box = posed.div({
   enter: { x: 0, opacity: 1 },
   exit: { x: 50, opacity: 0 }
@@ -48,13 +49,62 @@ class About extends Component {
           </div>
         </div>
         <div className={styles.bottom}>
-          <div className={styles.backgroundImage} />
           <div className={styles.imageAndText}>
-            <div className={styles.mainImage} />
-            <div className={styles.links}>
-              <Link to="/about">Home</Link>
-              <Link to="/about">Experience</Link>
-            </div>
+            <ParallaxParty
+              offsetYMax={100}
+              offsetYMin={-100}
+              slowerScrollRate={true}
+            >
+              <div alt="background" className={styles.pink1} />
+            </ParallaxParty>
+            <ParallaxParty
+              offsetYMax={200}
+              offsetYMin={-200}
+              slowerScrollRate={true}
+            >
+              <div alt="background" className={styles.pink2} />
+            </ParallaxParty>
+            <ParallaxParty
+              offsetYMax={200}
+              offsetYMin={-200}
+              slowerScrollRate={true}
+            >
+              <div alt="background" className={styles.pink3} />
+            </ParallaxParty>
+            <ParallaxParty offsetYMax={300} offsetYMin={-300}>
+              <div alt="background" className={styles.blue1} />
+            </ParallaxParty>
+            <ParallaxParty
+              offsetYMax={500}
+              offsetYMin={-500}
+              slowerScrollRate={false}
+            >
+              <div className={styles.blue2}>
+                <div
+                  alt="background"
+                  className={styles.linkToExperienceBackground}
+                />
+                <div alt="background" className={styles.linkToExperience} />
+              </div>
+            </ParallaxParty>
+            <ParallaxParty
+              offsetYMax={500}
+              offsetYMin={-500}
+              slowerScrollRate={true}
+            >
+              <div alt="background" className={styles.blue3} />
+            </ParallaxParty>
+
+            <ParallaxParty
+              offsetYMax={220}
+              offsetYMin={-220}
+              slowerScrollRate={true}
+            >
+              <div className={styles.textAndLink}>
+                <div alt="background" className={styles.linkToHomeBackground} />
+                <div alt="background" className={styles.linkToHome} />
+              </div>
+            </ParallaxParty>
           </div>
         </div>
       </Container>

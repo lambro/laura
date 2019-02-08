@@ -5,7 +5,7 @@
   background-size: cover;
   position: fixed;
   z-index: -1;
-  animation: moveAround 20s ease-in-out infinite alternate;
+  animation: moveAround 30s ease-in-out infinite alternate;
 }
 
 .sectionMyLife {
@@ -59,33 +59,96 @@ h1 {
 .bottom {
   height: 100vh;
   background-color: rgba(255, 255, 255);
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
   position: relative;
-}
-
-.backgroundImage {
-  background-image: url('/images/right-background-blue.png');
-  background-size: contain;
-  width: 400px;
-  height: 400px;
-  animation: pulseFade 10s ease-in-out infinite;
-  position: absolute;
-  transform: translate(50% 50%);
-  transform-origin: 50%;
+  width: 100%;
 }
 
 .imageAndText {
-  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
-.mainImage {
+.pink1 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 100px;
+  left: 35%;
+  background-color: pink;
+}
+
+.pink2 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 80px;
+  left: 200px;
+  background-color: red;
+}
+
+.pink3 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 0px;
+  left: 85%;
+  background-color: orange;
+}
+
+.blue1 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 400px;
+  left: 20%;
+  background-color: green;
+}
+
+.blue2 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 10%;
+  left: 60%;
   background-color: black;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  transition: all 0.5s ease-in-out;
+}
+
+.blue2:hover {
+  transform: scale(1.2);
+}
+.blue3 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 220px;
+  left: 70%;
+  background-color: yellow;
+}
+
+.linkToHomeBackground {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  top: 60px;
+  left: 0;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.linkToHomeBackground:hover {
+  transform: scale(1.2);
+}
+
+.textAndLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
 }
 
 @keyframes moveAround {
