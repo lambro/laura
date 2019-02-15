@@ -20,7 +20,7 @@ class About extends Component {
         <div className={styles.sectionMyLife}>
           <div className={styles.leftMyLife}>
             <Box>
-              <h1>My life</h1>
+              <h1>Some Title</h1>
             </Box>
           </div>
           <div className={styles.rightTop}>
@@ -36,7 +36,7 @@ class About extends Component {
         <div className={styles.sectionMyPhilosophy}>
           <div className={styles.leftMyPhilosophy}>
             <Box>
-              <h1>My Philosophy</h1>
+              <h1>Some other title</h1>
             </Box>
           </div>
           <div className={styles.right}>

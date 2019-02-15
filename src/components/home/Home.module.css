@@ -10,4 +10,14 @@
 h1,
 h4 {
   text-align: center;
+  color: #121f50;
+}
+
+a:visited {
+  color: #121f50;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #ffffff;
 }
