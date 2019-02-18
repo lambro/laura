@@ -3,11 +3,20 @@ import { Parallax } from 'react-scroll-parallax'
 
 class ParallaxParty extends Component {
   render() {
-    const { children, offsetYMax, offsetYMin, slowerScrollRate } = this.props
+    const {
+      children,
+      offsetYMax,
+      offsetYMin,
+      offsetXMax,
+      offsetXMin,
+      slowerScrollRate
+    } = this.props
     return (
       <Parallax
         offsetYMax={offsetYMax}
         offsetYMin={offsetYMin}
+        offsetXMax={offsetXMax}
+        offsetXMin={offsetXMin}
         slowerScrollRate={slowerScrollRate}
         tag="figure"
       >

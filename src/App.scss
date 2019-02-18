@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Homemade+Apple|Raleway');
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.site-nav {
+  position: fixed;
+  margin: 0;
+  padding: 10px 0;
+  height: 40px;
+  top: 0;
+  right: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 3;
+  background-color: #000000;
+}
+
+ul li {
+  position: relative;
+  margin-right: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(205, 83, 52, 1);
+}
+
+a.active {
+  text-decoration: line-through;
+  color: rgba(205, 83, 52, 1);
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Ruda', sans-serif;
+  color: #ffffff;
+}
+
+a {
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* VARIABLES */
+/* HSL */
+$color1: hsla(0%, 0%, 20%, 1);
+$color2: hsla(173%, 70%, 35%, 1);
+$color3: hsla(179%, 78%, 42%, 1);
+$color4: hsla(12%, 60%, 50%, 1);
+$color5: hsla(0%, 0%, 0%, 1);
+
+/* RGB */
+$grey: rgba(51, 51, 51, 1);
+$green: rgba(27, 153, 139, 1);
+$lightGreen: rgba(23, 190, 187, 1);
+$red: rgba(205, 83, 52, 1);
+$black: rgba(0, 0, 0, 1);
