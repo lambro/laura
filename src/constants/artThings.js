@@ -61,6 +61,11 @@ export const artThings = [
     height: 1
   },
   {
+    src: '/images/chica.png',
+    width: 3,
+    height: 2
+  },
+  {
     src: '/images/roman.png',
     width: 3,
     height: 3
