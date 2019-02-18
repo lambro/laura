@@ -87,6 +87,7 @@ class Experience extends Component {
               <h2>
                 React / Node.js / API communication / GraphQL Microservices
               </h2>
+              <h2>Unit testing</h2>
             </div>
 
             <div className={styles.right}>
@@ -101,6 +102,7 @@ class Experience extends Component {
                 HTML / CSS / SASS / Coffeescript in a Ruby, Backbone &
                 Marionette stack.
               </h2>
+              <h2>Unit testing</h2>
 
               <h2>
                 <b>Durable Digital</b> Junior Front End Developer
@@ -130,23 +132,22 @@ class Experience extends Component {
                 <b>Style</b> I have had a lot of experience with CSS throughout
                 my coding life, starting with the Front End course at GA and
                 throughout my career as a Front End developer. CSS has changed a
-                lot over the years, often replacing the need for JavaScript,
-                allowing us to keep code more efficient and page load times
-                shorter and it has been beneficial to take advantage of this. I
-                have used pure CSS, and commercially, as is quite common, with
-                preprocessors such as SASS and LESS. As is clear on my older
-                projects I have always loved experimenting with CSS and as part
-                of my career, notably my work on the Ford Foundation project I
-                have a solid grasp of CSS, building fully responsive pages and
-                widgets to design, and working with designers to bring their
-                flat designs to an interactive platform.
+                lot over the years, often replacing the need for JavaScript. I
+                have used pure CSS, and preprocessors such as SASS, SCSS and
+                LESS. Experimenting with CSS is a lot of fun, and more recently
+                I have been playing with SVG design and animation. And in my day
+                to day work life I build fully responsive pages and components
+                to design, working with designers to bring their flat designs to
+                life with animations and consideration of the full UX experience
+                on interactive platforms.
               </h2>
 
               <h2>
                 <b>Production</b> Working with teams of local and remote
                 developers I have had valuable experience working with GIT on
-                collaborative projects and with Grunt and Cucumber as integral
-                parts of my day to day work processes.
+                collaborative projects and with Webpack, Circle CI, QA engineers
+                and unit testing as integral parts of my day to day work
+                processes.
               </h2>
               <h2>
                 <b>Integration</b> As a front end developer integration and
