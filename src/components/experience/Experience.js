@@ -43,7 +43,7 @@ class Experience extends Component {
                 offsetYMin={-70}
                 offsetXMax={-30}
                 offsetXMin={30}
-                slowerScrollRate="true"
+                slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
@@ -53,7 +53,7 @@ class Experience extends Component {
                 offsetYMin={-70}
                 offsetXMax={-30}
                 offsetXMin={30}
-                slowerScrollRate="true"
+                slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
@@ -63,7 +63,7 @@ class Experience extends Component {
                 offsetYMin={-70}
                 offsetXMax={-30}
                 offsetXMin={30}
-                slowerScrollRate="true"
+                slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
