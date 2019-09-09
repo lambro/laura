@@ -1,7 +1,7 @@
 export const art = {
   codeScreenShots: [
     {
-      src: '/images/hot chocolate.gif',
+      src: '/images/doge_colour_gif.gif',
       width: 2,
       height: 2
     },
