@@ -16,6 +16,10 @@ h4 {
   color: #121f50;
 }
 
+a {
+  color: #ffffff;
+}
+
 a:visited {
   color: #ffffff;
 }
@@ -35,7 +39,7 @@ a:hover {
 .innerLamb b {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.1em;
+  letter-spacing: 5px;
   color: rgba(27, 153, 139, 1);
 }
 

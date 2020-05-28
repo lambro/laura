@@ -13,15 +13,16 @@
 
 .aboutMe h2 {
   font-weight: normal;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
+  line-height: 50px;
 }
 
-.aboutMe h2 b {
+.aboutMe h2 strong {
   text-transform: uppercase;
   color: rgba(23, 190, 187, 1);
   font-weight: normal;
-  letter-spacing: 0.5em;
+  letter-spacing: 5px;
   font-family: 'Anton', sans-serif;
 }
 

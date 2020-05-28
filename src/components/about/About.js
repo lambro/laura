@@ -14,13 +14,21 @@ class About extends Component {
         <div className={styles.aboutMe}>
           <div>
             <h2>
-              I am a <b> front</b>end engineer <br /> based in Hong Kong, <br />
-              working in <b>react</b>and <b> node.js</b>
+              <strong> front</strong>end engineer
             </h2>
             <h2>
-              With a Masters in Science and fluency in Korean I have a wide
-              range of life experience. I destroy jars of Nutella at an
-              impressive pace and am an avid gamer.
+              Most recently working in <strong>react</strong>and
+              <strong> node.js</strong>
+            </h2>
+            <h2>A Master in Science.</h2>
+            <h2>
+              Concurrently a lover of, and allergic to, <strong>cats </strong>and<strong> Nutella</strong>.
+            </h2>
+            <h2>
+              Member of the <strong>console</strong> underclass.
+            </h2>
+            <h2>
+              Based in <strong>Singapore</strong>.
             </h2>
           </div>
           <div className={styles.imageInSvg}>
@@ -46,7 +54,7 @@ class About extends Component {
             </Parallax>
 
             <Parallax>
-              <img src="/images/laura.jpg" className={styles.clipped} alt="" />
+              <img src="/images/laura2.png" className={styles.clipped} alt="" />
             </Parallax>
 
             <Parallax
@@ -91,14 +99,12 @@ class About extends Component {
               was doing this I had a scooter accident, which made me realise
               that life is short and I should appreciate every day I have.
             </h2>
-            <br />
             <h2>
               I made an effort to get into jobs that I would wake up in the
               morning and look forward to going in to do, first at advertising
               agencies, then went on to do some modelling, DJing, TV work and
               play bass guitar in a band.
             </h2>
-            <br />
             <h2>
               I then decided to return to London and after a year back started
               experimenting with coding and ruby on the advice of many of my
@@ -107,9 +113,8 @@ class About extends Component {
               and that I wanted to do everyday so took steps to make this part
               of my life and work with my courses at General Assembly. Now its
               been years since I typed my first lines of code I am still happy I
-              made the leap, coding never gets boring, with so many languages,
-              frameworks and technologies out there I always have something new
-              to play with.
+              made the leap, coding never gets boring and I always have
+              something new to play with.
             </h2>
           </div>
         </div>

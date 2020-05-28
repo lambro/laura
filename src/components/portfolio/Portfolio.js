@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import posed from 'react-pose'
 import styles from './Portfolio.module.sass'
-import { Parallax } from 'react-scroll-parallax'
 import Gallery from 'react-photo-gallery'
 import { art } from '../../constants/artThings'
 
