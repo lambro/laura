@@ -82,7 +82,7 @@ class Experience extends Component {
               <h2>
                 <b>KintoHub</b> Front End Engineer
               </h2>
-              <h2>September 2017 - Present </h2>
+              <h2>September 2017 - May 2020 </h2>
               <h2>HTML / JSX / JS / SCSS </h2>
               <h2>
                 React / Node.js / API communication / GraphQL Microservices
@@ -126,7 +126,7 @@ class Experience extends Component {
                 forms since I began. Initially I worked on large projects using
                 Javascript, JQuery and AngularJS to display visuals using data
                 from our clients API. Following this I went on to work on a
-                social learning web app set in a backbone-marionette stack.
+                social learning web app set in a Backbone-Marionette stack.
               </h2>
               <h2>
                 <b>Style</b> I have had a lot of experience with CSS throughout
