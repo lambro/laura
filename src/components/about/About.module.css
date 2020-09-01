@@ -1,47 +1,39 @@
 .aboutMe {
-  background-image: url('/images/main-background.png');
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
-  animation: moveAround 30s ease-in-out infinite alternate;
+  background-color: rgba(51, 51, 51, 1);
+  color: #ffffff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 40% 40%;
+  animation: darkness 1s 2s ease-in forwards;
+  overflow: hidden;
+}
+
+.aboutMe h2 {
+  font-weight: normal;
+  /* display: inline-block; */
+  text-align: left;
+  line-height: 50px;
+}
+
+.aboutMe h2 strong {
+  text-transform: uppercase;
+  color: rgba(23, 190, 187, 1);
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: 'Anton', sans-serif;
 }
 
 .sectionMyLife {
   display: grid;
-  background: #ffffff;
-  grid-template-columns: 50% 50%;
+  background: rgba(51, 51, 51, 1);
+  grid-template-columns: 20% 20px 1fr;
   height: 100vh;
-}
-
-.sectionMyPhilosophy {
-  display: grid;
-  background-color: transparent;
-  grid-template-columns: 50% 50%;
-  height: 100vh;
-}
-
-.leftMyLife {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-}
-
-.leftMyPhilosophy {
-  display: flex;
+  padding: 40px;
   align-items: center;
-  justify-content: center;
-}
-
-.rightTop {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 100px;
-  background-image: url('/images/right-background-blue.png');
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 
 .right {
@@ -56,89 +48,10 @@ h1 {
   color: #121f50;
 }
 
-.bottom {
-  height: 100vh;
-  background-color: rgba(255, 255, 255);
-  position: relative;
-  width: 100%;
-}
-
 .imageAndText {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
-}
-
-.pink1 {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 100px;
-  left: 35%;
-  background-color: pink;
-}
-
-.pink2 {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 80px;
-  left: 200px;
-  background-color: red;
-}
-
-.pink3 {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 0px;
-  left: 85%;
-  background-color: orange;
-}
-
-.blue1 {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 400px;
-  left: 20%;
-  background-color: green;
-}
-
-.blue2 {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 10%;
-  left: 60%;
-  background-color: black;
-  transition: all 0.5s ease-in-out;
-}
-
-.blue2:hover {
-  transform: scale(1.2);
-}
-.blue3 {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 220px;
-  left: 70%;
-  background-color: yellow;
-}
-
-.linkToHomeBackground {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  top: 60px;
-  left: 0;
-  background-color: black;
-  transition: all 0.5s ease-in-out;
-}
-
-.linkToHomeBackground:hover {
-  transform: scale(1.2);
 }
 
 .textAndLink {
@@ -147,33 +60,82 @@ h1 {
   justify-content: center;
 }
 
+.clipped {
+  width: 400px;
+  height: 400px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 1;
+}
+
+.border {
+  position: relative;
+  left: 380px;
+}
+
+.border1 {
+  position: relative;
+  z-index: 2;
+  left: 260px;
+}
+
+.path {
+  stroke-dasharray: 1116.4564208984375 1116.4564208984375;
+  stroke-dashoffset: 1116.4564208984375;
+  animation: drawLine 1s 1s ease-in-out forwards, fillOut 1s 2s ease-in forwards;
+}
+
+.path1 {
+  stroke-dasharray: 1440.060302734375 1440.060302734375;
+  stroke-dashoffset: 1440.060302734375;
+  animation: drawLine 1s 1s ease-in-out forwards;
+}
+
+.imageInSvg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  height: 60vh;
+  width: 5px;
+  background-color: rgba(205, 83, 52, 1);
+  position: relative;
+  left: 0;
+}
+
+.textualInformation h2 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.textualInformation h2:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 figure {
   margin: 0;
 }
 
-@keyframes moveAround {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.5);
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-@keyframes pulseFade {
-  0% {
-    opacity: 0;
-    transform: scale(1);
+@keyframes darkness {
+  to {
+    background-color: #000000;
   }
-  10% {
-    opacity: 1;
-  }
+}
 
-  90% {
-    opacity: 1;
+@keyframes fillOut {
+  from {
+    fill: rgba(0, 0, 0, 0);
   }
-  100% {
-    opacity: 0;
-    transform: scale(2);
+  to {
+    fill: rgba(51, 51, 51, 1);
   }
 }

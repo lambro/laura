@@ -1,110 +1,119 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import posed from 'react-pose'
 import styles from './About.module.css'
-import ParallaxParty from '../utilities/ParallaxParty'
+import { Parallax } from 'react-scroll-parallax'
+
 const Container = posed.div({
   enter: { staggerChildren: 50 }
-})
-
-const Box = posed.div({
-  enter: { x: 0, opacity: 1 },
-  exit: { x: 50, opacity: 0 }
 })
 
 class About extends Component {
   render() {
     return (
       <Container>
-        <div className={styles.aboutMe} />
-        <div className={styles.sectionMyLife}>
-          <div className={styles.leftMyLife}>
-            <Box>
-              <h1>Some Title</h1>
-            </Box>
+        <div className={styles.aboutMe}>
+          <div>
+            <h2>
+              <strong> front</strong>end engineer
+            </h2>
+            <h2>
+              Most recently working in <strong>react</strong>and
+              <strong> node.js</strong>
+            </h2>
+            <h2>A Master in Science.</h2>
+            <h2>
+              Concurrently a lover of, and allergic to, <strong>cats </strong>and<strong> Nutella</strong>.
+            </h2>
+            <h2>
+              Member of the <strong>console</strong> underclass.
+            </h2>
+            <h2>
+              Based in <strong>Singapore</strong>.
+            </h2>
           </div>
-          <div className={styles.rightTop}>
-            <Box>
-              Some more Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Nesciunt, dignissimos asperiores ad laudantium, soluta
-              quasi! Fugit unde reiciendis perferendis cupiditate et officia,
-              reprehenderit sed libero praesentium delectus, consequatur
-              quibusdam totam. here
-            </Box>
-          </div>
-        </div>
-        <div className={styles.sectionMyPhilosophy}>
-          <div className={styles.leftMyPhilosophy}>
-            <Box>
-              <h1>Some other title</h1>
-            </Box>
-          </div>
-          <div className={styles.right}>
-            <Box>
-              Some Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-              maiores modi incidunt voluptas inventore mollitia laborum
-              reiciendis autem, magni dolor odit rerum atque, saepe, vero unde
-              similique exercitationem libero illo! stuff here
-            </Box>
-          </div>
-        </div>
-        <div className={styles.bottom}>
-          <div className={styles.imageAndText}>
-            <ParallaxParty
-              offsetYMax={100}
-              offsetYMin={-100}
-              slowerScrollRate={true}
+          <div className={styles.imageInSvg}>
+            <Parallax
+              className={styles.border}
+              offsetXMax={100}
+              offsetXMin={-100}
             >
-              <div alt="background" className={styles.pink1} />
-            </ParallaxParty>
-            <ParallaxParty
-              offsetYMax={200}
-              offsetYMin={-200}
-              slowerScrollRate={true}
-            >
-              <div alt="background" className={styles.pink2} />
-            </ParallaxParty>
-            <ParallaxParty
-              offsetYMax={200}
-              offsetYMin={-200}
-              slowerScrollRate={true}
-            >
-              <div alt="background" className={styles.pink3} />
-            </ParallaxParty>
-            <ParallaxParty offsetYMax={300} offsetYMin={-300}>
-              <div alt="background" className={styles.blue1} />
-            </ParallaxParty>
-            <ParallaxParty
-              offsetYMax={500}
-              offsetYMin={-500}
-              slowerScrollRate={false}
-            >
-              <div className={styles.blue2}>
-                <div
-                  alt="background"
-                  className={styles.linkToExperienceBackground}
+              <svg height="360" width="360">
+                <polygon
+                  id="triangle"
+                  points="5, 5, 350, 5, 175 , 350"
+                  className={styles.path}
+                  style={{
+                    stroke: 'rgba(23, 190, 187, 1)',
+                    strokeWidth: 5,
+                    strokeLinejoin: 'round',
+                    strokeLinecap: 'round',
+                    fill: 'none'
+                  }}
                 />
-                <div alt="background" className={styles.linkToExperience} />
-              </div>
-            </ParallaxParty>
-            <ParallaxParty
-              offsetYMax={500}
-              offsetYMin={-500}
-              slowerScrollRate={true}
-            >
-              <div alt="background" className={styles.blue3} />
-            </ParallaxParty>
+              </svg>
+            </Parallax>
 
-            <ParallaxParty
-              offsetYMax={220}
-              offsetYMin={-220}
-              slowerScrollRate={true}
+            <Parallax>
+              <img src="/images/laura2.png" className={styles.clipped} alt="" />
+            </Parallax>
+
+            <Parallax
+              offsetXMax={-200}
+              className={styles.border1}
+              offsetXMin={-100}
             >
-              <div className={styles.textAndLink}>
-                <div alt="background" className={styles.linkToHomeBackground} />
-                <div alt="background" className={styles.linkToHome} />
-              </div>
-            </ParallaxParty>
+              <svg height="460" width="460">
+                <polygon
+                  id="triangleTop"
+                  points="5, 5, 450, 5, 225, 450"
+                  className={styles.path1}
+                  style={{
+                    stroke: 'white',
+                    strokeWidth: 5,
+                    strokeLinejoin: 'round',
+                    strokeLinecap: 'round',
+                    fill: 'none'
+                  }}
+                />
+              </svg>
+            </Parallax>
+          </div>
+        </div>
+        <div className={styles.sectionMyLife}>
+          <h1>The Details</h1>
+          <div>
+            <Parallax
+              offsetYMax={200}
+              offsetYMin={-200}
+              offsetXMax={0}
+              offsetXMin={0}
+            >
+              <div className={styles.line} />
+            </Parallax>
+          </div>
+          <div className={styles.textualInformation}>
+            <h2>
+              After graduating from the London School of Hygiene
+              and Tropical Medicine, I decided to take some time out abroad. I moved to Korea, where I taught English at first. 
+              While I was doing this I had a scooter accident, which scared me into squeezing more out of my day to day life.
+            </h2>
+            <h2>
+              I made an effort to get into jobs that I would wake up in the
+              morning and look forward to going in to do, first at advertising
+              agencies, then went on to do some modelling, DJing, TV work and
+              play bass guitar in a band.
+            </h2>
+            <h2>
+              I then decided to return to London and, after a year back acclimatising, started
+              experimenting with coding and ruby on the advice of many of my
+              close friends, who described me as a "massive geek who just didn't
+              know it yet". 
+              I found coding enjoyable and decided that I wanted to do it everyday so took steps to make this part
+              of my life and work with my courses at General Assembly. Now its
+              been years since I typed my first lines of code I am still happy I
+              made the leap, coding never gets boring and I always have
+              something new to play with.
+            </h2>
           </div>
         </div>
       </Container>

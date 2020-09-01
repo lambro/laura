@@ -1,0 +1,235 @@
+$lightGreen: rgba(23, 190, 187, 1)
+$green: rgba(27, 153, 139, 1)
+
+.portfolio
+  min-height: 100vh
+  padding: 60px 40px 40px
+  background-color: rgba(0, 0, 0, 1)
+
+.portfolio h2
+  cursor: pointer
+  text-align: center
+
+.titles
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  justify-content: space-between
+  margin: 80px auto
+
+.titles
+  h2
+    color: #ffffff
+    position: relative
+    transition: all 0.2s ease
+  h2:hover
+    color: $lightGreen
+    .pathLeft
+      animation: moveAround 7s ease infinite
+    .pathRight
+      animation: moveAroundRight 7s ease infinite
+    .pathSquareTopLeft
+      animation: moveSquareTopLeft 7s linear infinite
+    .pathSquareTopSmall
+      animation: moveSquareTopSmall 7s linear infinite
+
+.heading:hover
+  .cube
+    animation: spin 7s infinite linear
+  h2
+    color: $lightGreen
+
+.pathLeft, .pathRight, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
+  position: absolute
+  transform-origin: 50% 50%
+
+.pathLeft
+  bottom: 0
+  left: 20px
+  stroke: rgba(255, 255, 255, 0.5)
+
+.pathRight
+  bottom: 0
+  right: 20px
+  stroke: rgba(255, 255, 255, 0.5)
+
+.pathSquareTopLeft
+  top: 0
+  left: 100px
+  fill: rgba(255, 255, 255, 0.5)
+
+.pathSquareTopSmall
+  top: -120%
+  left: 35%
+  fill: rgba(255, 255, 255, 0.5)
+
+.pathSquareBottom
+  top: -140%
+  right: 35%
+  stroke: rgba(255, 255, 255, 0.5)
+
+.pathSquareBottomRight
+  top: 10%
+  right: 25%
+  stroke: rgba(255, 255, 255, 0.5)
+
+.pathSquareBottomSmall
+  bottom: -100%
+  right: 40%
+  stroke: rgba(255, 255, 255, 0.5)
+
+.cube
+  -webkit-transform-style: preserve-3d
+  // -webkit-animation: spin 7s infinite linear
+  position: relative
+  width: 100px
+  height: 100px
+  top: 50%
+  left: 50%
+  margin-left: -50px
+  margin-top: -50px
+
+.cube div
+  width: 100px
+  height: 100px
+  line-height: 100px
+  text-align: center
+  border: solid 1px white
+  display: block
+  position: absolute
+
+.cube  .topCube
+  transform: rotateX(90deg)
+  margin-top: -50px
+
+
+.cube  .rightCube
+  transform: rotateY(90deg)
+  margin-left: 50px
+
+
+.cube  .bottomCube
+  transform: rotateX(-90deg)
+  margin-top: 50px
+
+
+.cube .leftCube
+  transform: rotateY(-90deg)
+  margin-left: -50px
+
+
+.cube  .frontCube
+  transform: translateZ(50px)
+
+
+.cube .backCube
+  transform: translateZ(-50px) rotateX(180deg)
+
+
+@keyframes spin
+  0%
+    transform: rotateX(-20deg) rotateY(20deg)
+  100%
+    transform: rotateX(-20deg) rotateY(740deg)
+
+
+@keyframes moveAround
+  0%
+    left: 20px
+    bottom: 0
+    transform: rotate(0deg)
+    stroke: rgba(255, 255, 255, 0.5)
+  25%
+    left: 120px
+    bottom: 80px
+    stroke: rgba($lightGreen, 1)
+
+  50%
+    left: 20px
+    bottom: 0
+    stroke: rgba(255, 255, 255, 0.5)
+
+  75%
+    left: 120px
+    bottom: -80px
+    stroke: rgba($lightGreen, 1)
+
+  100%
+    left: 20px
+    bottom: 0px
+    transform: rotate(360deg)
+    stroke: rgba(255, 255, 255, 0.5)
+
+@keyframes moveAroundRight
+  0%
+    bottom: 0
+    right: 20px
+    transform: rotate(0deg)
+    stroke: rgba(255, 255, 255, 0.5)
+  25%
+    right: 120px
+    bottom: -80px
+    stroke: rgba($green, 1)
+  50%
+    right: 20px
+    bottom: 0
+    stroke: rgba(255, 255, 255, 0.5)
+  75%
+    right: 120px
+    bottom: 80px
+    stroke: rgba($green, 1)
+
+  100%
+    right: 20px
+    bottom: 0px
+    transform: rotate(360deg)
+    stroke: rgba(255, 255, 255, 0.5)
+
+@keyframes moveSquareTopLeft
+  0%
+    left: 100px
+    transform: scale(1)
+    fill: rgba(255, 255, 255, 0.5)
+  25%
+    left: 110px
+    fill: rgba($lightGreen, 1)
+  50%
+    left: 100px
+    transform: scale(1.2)
+    top: 10px
+    fill: rgba(255, 255, 255, 0.5)
+
+  75%
+    left: 90px
+    fill: rgba($lightGreen, 1)
+
+  100%
+    left: 100px
+    transform: scale(1)
+    fill: rgba(255, 255, 255, 0.5)
+
+@keyframes moveSquareTopSmall
+  0%
+    top: -120%
+    left: 35%
+    transform: scale(1)
+    fill: rgba(255, 255, 255, 0.5)
+  25%
+    top: -125%
+    left: 40%
+    fill: rgba($lightGreen, 1)
+  50%
+    top: -120%
+    left: 30%
+    transform: scale(1.2)
+    fill: rgba(255, 255, 255, 0.5)
+
+  75%
+    top: -115%
+    left: 35%
+    fill: rgba($lightGreen, 1)
+
+  100%
+    top: -120%
+    left: 35%
+    transform: scale(1)
+    fill: rgba(255, 255, 255, 0.5)

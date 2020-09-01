@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
+import { Route, NavLink, Switch } from 'react-router-dom'
 import posed, { PoseGroup } from 'react-pose'
 
 import Home from './components/home/Home'
@@ -7,8 +7,7 @@ import About from './components/about/About'
 import Experience from './components/experience/Experience'
 import Contact from './components/contact/Contact'
 import Portfolio from './components/portfolio/Portfolio'
-import './App.css'
-
+import './App.scss'
 const RoutesContainer = posed.div({
   enter: { opacity: 1, beforeChildren: true, delay: 300 },
   exit: { opacity: 0 }
@@ -23,19 +22,31 @@ class App extends Component {
             <div id="content-container">
               <ul className="site-nav">
                 <li>
-                  <Link to="/">Home</Link>
+                  <NavLink exact activeClassName="active" to="/">
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <NavLink activeClassName="active" to="/about">
+                    About
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/experience">Experience</Link>
+                  <NavLink activeClassName="active" to="/experience">
+                    Experience
+                  </NavLink>
                 </li>
+
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <NavLink activeClassName="active" to="/portfolio">
+                    Portfolio
+                  </NavLink>
                 </li>
+
                 <li>
-                  <Link to="/portfolio">Portfolio</Link>
+                  <NavLink activeClassName="active" to="/contact">
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
 

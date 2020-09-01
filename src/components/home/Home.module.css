@@ -1,23 +1,116 @@
 .homePage {
-  background-image: url('/images/main-background.png');
+  background-color: rgba(51, 51, 51, 1);
   background-size: cover;
   height: 100vh;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  animation: darkness 1s 3.5s ease-in forwards;
 }
 
 h1,
+h2,
 h4 {
-  text-align: center;
+  text-align: left;
   color: #121f50;
+}
+
+a {
+  color: #ffffff;
 }
 
 a:visited {
-  color: #121f50;
+  color: #ffffff;
 }
 
 a:hover {
-  font-weight: bold;
   color: #ffffff;
+  /* animation: newfont 1s infinite; */
+}
+
+.inner,
+.innerLamb {
+  display: grid;
+  align-items: center;
+}
+
+.inner b,
+.innerLamb b {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgba(27, 153, 139, 1);
+}
+
+.inner {
+  justify-content: flex-end;
+}
+
+.innerLamb {
+  justify-content: flex-start;
+}
+
+.lambImage {
+  height: 90vh;
+}
+
+.outline {
+  opacity: 0;
+  animation: drawLine 2s 1s ease-in-out forwards;
+}
+
+.leg {
+  opacity: 0;
+  animation: appear 0.5s 3s ease-in forwards;
+}
+.eye {
+  opacity: 0;
+  animation: appear 0.5s 3.5s ease-in forwards, flicker 8s linear infinite;
+}
+
+@keyframes drawLine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    stroke: #efefef;
+  }
+  87% {
+    stroke: #efefef;
+  }
+  88% {
+    stroke: rgba(205, 83, 52, 1);
+  }
+  89% {
+    stroke: #efefef;
+  }
+  97% {
+    stroke: #efefef;
+  }
+  98% {
+    stroke: rgba(23, 190, 187, 1);
+  }
+  100% {
+    stroke: #efefef;
+  }
+}
+
+@keyframes darkness {
+  to {
+    background-color: #000000;
+  }
 }
