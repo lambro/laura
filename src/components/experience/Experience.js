@@ -131,11 +131,10 @@ class Experience extends Component {
               <h2>
                 <b>Style</b> I have had a lot of experience with CSS throughout
                 my coding life, starting with the Front End course at GA and
-                throughout my career as a Front End developer. CSS has changed a
-                lot over the years, often replacing the need for JavaScript. I
+                throughout my career as a Front End developer. CSS has changed significantly over the years, now sometimes replacing the need for JavaScript. I
                 have used pure CSS, and preprocessors such as SASS, SCSS and
                 LESS. Experimenting with CSS is a lot of fun, and more recently
-                I have been playing with SVG design and animation. And in my day
+                I have been playing with SVG design and animation. In my day
                 to day work life I build fully responsive pages and components
                 to design, working with designers to bring their flat designs to
                 life with animations and consideration of the full UX experience
@@ -153,8 +152,9 @@ class Experience extends Component {
                 <b>Integration</b> As a front end developer integration and
                 collaboration with other developers is an essential skill, I
                 worked in a .NET stack at Durable, integrating with C# in
-                Umbraco and Sitecore CMS systems. My most recent experience was
-                with a Ruby stack at Fuse.
+                Umbraco and Sitecore CMS systems. Following this I went on to work with a full stack team at Fuse where we were integrating Ruby with Backbone Marionette.
+                My most recent experience was with a React stack at KintoHub, where we worked in microservices and a complete separation of interests.
+                the front end communicated with back end services exclusively via APIs, using REST at first and then via GraphQL.
               </h2>
             </div>
           </div>
@@ -164,9 +164,11 @@ class Experience extends Component {
             </div>
             <div className={styles.line4} />
             <div className={styles.right}>
-              <h2>Pixel Art / Digital Art</h2>
-              <h2>Muay Thai</h2>
               <h2>Video Games</h2>
+              <h2>Muay Thai</h2>
+              <h2>Running</h2>
+              <h2>Yoga</h2>
+              <h2>Pixel Art / Digital Art</h2>
             </div>
           </div>
           <div className={styles.fifth}>

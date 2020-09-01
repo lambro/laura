@@ -12,8 +12,8 @@ const PortfolioSection = posed.div({
 class Portfolio extends Component {
   state = {
     itemsToShow: 'isometricThings',
-    isShown: false,
-    section: ''
+    isShown: true,
+    section: 'isometricThings'
   }
 
   selectItem = art => {

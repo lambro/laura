@@ -22,6 +22,77 @@
   font-family: 'Anton', sans-serif;
 }
 
+.triangle img,
+.triangle2 img,
+.triangle3 img {
+  display: none;
+}
+
+.line,
+.line2,
+.line3,
+.line4 {
+  height: 5px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  background-color: rgba(27, 153, 139, 1);
+}
+
+.line2 {
+  background-color: rgba(205, 83, 52, 1);
+}
+
+.line3 {
+  background-color: rgba(23, 190, 187, 1);
+}
+
+.line4 {
+  background-color: rgba(205, 83, 52, 1);
+}
+
+@media (min-width: 600px) {
+  .triangle img,
+  .triangle2 img,
+  .triangle3 img {
+    display: block;
+  }
+
+  .line,
+  .line2,
+  .line3,
+  .line4 {
+    height: 60vh;
+    width: 5px;
+    position: relative;
+    left: 0;
+    background-color: rgba(27, 153, 139, 1);
+  }
+
+  .line,
+  .line2,
+  .line3,
+  .line4 {
+    height: 60vh;
+    width: 5px;
+    position: relative;
+    left: 0;
+    background-color: rgba(27, 153, 139, 1);
+  }
+
+  .line2 {
+    background-color: rgba(205, 83, 52, 1);
+  }
+
+  .line3 {
+    background-color: rgba(23, 190, 187, 1);
+  }
+
+  .line4 {
+    background-color: rgba(205, 83, 52, 1);
+  }
+}
+
 .triangle {
   position: absolute;
   bottom: -175px;
@@ -35,7 +106,7 @@
 
 .triangle2 {
   position: absolute;
-  bottom: 55px;
+  bottom: 0px;
   right: 400px;
 }
 
@@ -55,29 +126,6 @@
   width: 50px;
 }
 
-.line,
-.line2,
-.line3,
-.line4 {
-  height: 60vh;
-  width: 5px;
-  position: relative;
-  left: 0;
-  background-color: rgba(27, 153, 139, 1);
-}
-
-.line2 {
-  background-color: rgba(205, 83, 52, 1);
-}
-
-.line3 {
-  background-color: rgba(23, 190, 187, 1);
-}
-
-.line4 {
-  background-color: rgba(0, 0, 0, 1);
-}
-
 .first,
 .second,
 .third,
@@ -85,7 +133,7 @@
   max-width: 100%;
   padding: 40px;
   display: grid;
-  grid-template-columns: 300px 20px auto;
+  grid-template-columns: auto;
   grid-column-gap: 40px;
   align-items: center;
   height: 100vh;
@@ -96,7 +144,7 @@
 }
 
 .second {
-  grid-template-columns: 300px 20px 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .second .right {
@@ -134,4 +182,19 @@
   display: grid;
   align-items: center;
   background-color: rgba(0, 0, 0, 1);
+}
+
+/* // fixing the lines */
+
+@media (min-width: 600px) {
+  .first,
+  .second,
+  .third,
+  .fourth {
+    grid-template-columns: 300px 20px auto;
+  }
+
+  .second {
+    grid-template-columns: 300px 20px 1fr 1fr;
+  }
 }
