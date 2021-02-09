@@ -31,6 +31,54 @@ class About extends Component {
               Based in <strong>Singapore</strong>.
             </h2>
           </div>
+               <div className={styles.imageInSvgMobile}>
+            <Parallax
+              className={styles.border}
+              offsetXMax={100}
+              offsetXMin={-100}
+            >
+              <svg height="260" width="260">
+                <polygon
+                  id="triangleMobile"
+                  points="5, 5,250, 5, 125 , 250"
+                  className={styles.path}
+                  style={{
+                    stroke: 'rgba(23, 190, 187, 1)',
+                    strokeWidth: 5,
+                    strokeLinejoin: 'round',
+                    strokeLinecap: 'round',
+                    fill: 'none'
+                  }}
+                />
+              </svg>
+            </Parallax>
+
+            <Parallax>
+              <img src="/images/laura2.png" className={styles.clipped} alt="" />
+            </Parallax>
+
+            <Parallax
+              offsetXMax={200}
+              className={styles.border1}
+              offsetXMin={-200}
+            >
+              <svg height="360" width="360">
+                <polygon
+                  id="triangleTopMobile"
+                  points="5, 5, 350, 5, 175, 350"
+                  className={styles.path1}
+                  style={{
+                    stroke: 'white',
+                    strokeWidth: 5,
+                    strokeLinejoin: 'round',
+                    strokeLinecap: 'round',
+                    fill: 'none'
+                  }}
+                />
+              </svg>
+            </Parallax>
+          </div>
+     
           <div className={styles.imageInSvg}>
             <Parallax
               className={styles.border}
