@@ -81,7 +81,7 @@ class About extends Component {
         </div>
         <div className={styles.sectionMyLife}>
           <h1>The Details</h1>
-          <div>
+          <div className={styles.theBorderLine}>
             <Parallax
               offsetYMax={200}
               offsetYMin={-200}
