@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import posed from 'react-pose'
-import styles from './About.module.css'
+import styles from './About.module.scss'
 import { Parallax } from 'react-scroll-parallax'
 
 const Container = posed.div({

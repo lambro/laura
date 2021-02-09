@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './Experience.module.css'
+import styles from './Experience.module.scss'
 import { Parallax } from 'react-scroll-parallax'
 
 class Experience extends Component {
@@ -76,7 +76,7 @@ class Experience extends Component {
             <div className={styles.line2} />
 
             <div className={styles.right}>
-              <h2>
+              <h2 className={styles.country}>
                 <b>HONG KONG</b>
               </h2>
               <h2>
@@ -91,7 +91,7 @@ class Experience extends Component {
             </div>
 
             <div className={styles.right}>
-              <h2>
+              <h2 className={styles.country}>
                 <b>LONDON</b>
               </h2>
               <h2>
@@ -166,9 +166,11 @@ class Experience extends Component {
             <div className={styles.right}>
               <h2>Video Games</h2>
               <h2>Muay Thai</h2>
+              <h2>Portraits / Pixel Art / Digital Art</h2>
+              <h2>Cycling</h2>
               <h2>Running</h2>
               <h2>Yoga</h2>
-              <h2>Pixel Art / Digital Art</h2>
+              <h2>Horticulture</h2>
             </div>
           </div>
           <div className={styles.fifth}>

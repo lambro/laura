@@ -2,24 +2,15 @@
   min-height: 100vh;
 }
 
-.left {
-  padding-left: 10px;
-}
-
 .right h2 {
-  color: #ffffff;
-  margin-bottom: 30px;
-  padding-right: 20px;
-  font-weight: normal;
-}
-
-.right h2:last-child {
-  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 1em;
 }
 
 .right h2 b {
   font-weight: bold;
   font-family: 'Anton', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .triangle img,
@@ -51,7 +42,7 @@
   background-color: rgba(205, 83, 52, 1);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1125px) {
   .triangle img,
   .triangle2 img,
   .triangle3 img {
@@ -96,7 +87,7 @@
 .triangle {
   position: absolute;
   bottom: -175px;
-  right: 10%;
+  left: 35%;
 }
 
 .triangle img {
@@ -106,8 +97,8 @@
 
 .triangle2 {
   position: absolute;
-  bottom: 0px;
-  right: 400px;
+  bottom: 0;
+  left: 400px;
 }
 
 .triangle2 img {
@@ -117,7 +108,6 @@
 
 .triangle3 {
   position: absolute;
-  bottom: -50px;
   left: 15%;
 }
 
@@ -136,11 +126,18 @@
   grid-template-columns: auto;
   grid-column-gap: 40px;
   align-items: center;
-  height: 100vh;
+}
+
+.first {
+  margin-top: 40px;
 }
 
 .first .right h2 b {
   color: rgba(27, 153, 139, 1);
+}
+
+.country {
+  letter-spacing: 0.5em;
 }
 
 .second {
@@ -186,15 +183,34 @@
 
 /* // fixing the lines */
 
-@media (min-width: 600px) {
+@media (min-width: 1125px) {
+  .left {
+    padding-left: 10px;
+  }
   .first,
   .second,
   .third,
   .fourth {
     grid-template-columns: 300px 20px auto;
+    height: 100vh;
+  }
+
+  .first {
+    margin-top: 40px;
   }
 
   .second {
     grid-template-columns: 300px 20px 1fr 1fr;
+  }
+
+  .right h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    font-weight: normal;
+  }
+
+  .right h2:last-child {
+    margin-bottom: 0;
   }
 }
