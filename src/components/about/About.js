@@ -37,10 +37,10 @@ class About extends Component {
               offsetXMax={100}
               offsetXMin={-100}
             >
-              <svg height="260" width="260">
+              <svg height="200" width="200">
                 <polygon
                   id="triangleMobile"
-                  points="5, 5,250, 5, 125 , 250"
+                  points="5, 5,190, 5, 95 , 190"
                   className={styles.path}
                   style={{
                     stroke: 'rgba(23, 190, 187, 1)',
@@ -62,10 +62,10 @@ class About extends Component {
               className={styles.border1}
               offsetXMin={-200}
             >
-              <svg height="360" width="360">
+              <svg height="300" width="300">
                 <polygon
                   id="triangleTopMobile"
-                  points="5, 5, 350, 5, 175, 350"
+                  points="5, 5, 290, 5, 145, 290"
                   className={styles.path1}
                   style={{
                     stroke: 'white',
