@@ -92,18 +92,18 @@ class About extends Component {
             </Parallax>
           </div>
           <div className={styles.textualInformation}>
-            <h2>
+            <h4>
               After graduating from the London School of Hygiene
               and Tropical Medicine, I decided to take some time out abroad. I moved to Korea, where I taught English at first. 
               While I was doing this I had a scooter accident, which scared me into squeezing more out of my day to day life.
-            </h2>
-            <h2>
+            </h4>
+            <h4>
               I made an effort to get into jobs that I would wake up in the
               morning and look forward to going in to do, first at advertising
               agencies, then went on to do some modelling, DJing, TV work and
               play bass guitar in a band.
-            </h2>
-            <h2>
+            </h4>
+            <h4>
               I then decided to return to London and, after a year back acclimatising, started
               experimenting with coding and ruby on the advice of many of my
               close friends, who described me as a "massive geek who just didn't
@@ -113,7 +113,7 @@ class About extends Component {
               been years since I typed my first lines of code I am still happy I
               made the leap, coding never gets boring and I always have
               something new to play with.
-            </h2>
+            </h4>
           </div>
         </div>
       </Container>

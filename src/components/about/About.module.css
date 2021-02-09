@@ -1,5 +1,4 @@
 .aboutMe {
-  height: 100vh;
   width: 100%;
   background-color: rgba(51, 51, 51, 1);
   color: #ffffff;
@@ -9,6 +8,12 @@
   animation: darkness 1s 2s ease-in forwards;
   overflow: hidden;
   grid-template-columns: 40% 40%;
+}
+
+.aboutMe,
+.sectionMyLife {
+  height: calc(100vh - 60px);
+  margin-top: 40px;
 }
 
 .aboutMe h2 {
@@ -29,9 +34,9 @@
 .sectionMyLife {
   display: grid;
   background: rgba(51, 51, 51, 1);
-  grid-template-columns: auto;
+  grid-template-rows: 40vh 20px min-content;
+  padding: 60px 40px;
   height: 100vh;
-  padding: 40px;
   align-items: center;
   overflow: hidden;
 }
@@ -98,19 +103,19 @@ h1 {
 }
 
 .line {
-  height: 60vh;
-  width: 5px;
-  background-color: rgba(205, 83, 52, 1);
   position: relative;
   left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: rgba(205, 83, 52, 1);
 }
 
-.textualInformation h2 {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+.textualInformation h4 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.textualInformation h2:last-child {
+.textualInformation h4:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -142,7 +147,12 @@ figure {
 
 /* media queries  */
 
-@media (max-width: 1125px) {
+@media (min-width: 1125px) {
+  .line {
+    height: 60vh;
+    width: 5px;
+    background-color: rgba(205, 83, 52, 1);
+  }
   .border {
     position: absolute;
     left: 25%;
@@ -164,7 +174,7 @@ figure {
     align-items: center;
     overflow: hidden;
   }
-    .theBorderLine{
+  .theBorderLine {
     grid-template-columns: 20% 20px 1fr;
     width: 80wh;
     height: 5px;
