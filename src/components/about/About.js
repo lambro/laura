@@ -164,6 +164,55 @@ class About extends Component {
             </h4>
           </div>
         </div>
+         <div className={styles.fifth}>
+            <div className={styles.images}>
+
+              <Parallax 
+              offsetXMax={100}
+              offsetXMin={-100}
+              >
+              <img src="/images/about/hiking.jpg" className={styles.clipped} alt="" />
+              <img src="/images/about/sanfransisco.jpg" className={styles.clippedSF} alt="" />
+              <img src="/images/about/gloves.jpg" className={styles.clippedBoxing} alt="" />
+            
+            </Parallax>
+              </div>
+         
+            <div className={styles.images}>
+
+              <Parallax 
+               offsetXMax={-100}
+              offsetXMin={100}
+              >
+              <img src="/images/about/junji.jpg" className={styles.clippedInverted} alt="" />
+              <img src="/images/about/daytoday.jpg" className={styles.clippedPortrait} alt="" />
+              <img src="/images/about/junk.jpg" className={styles.clippedInverted} alt="" />
+              <img src="/images/about/boxing.jpg" className={styles.clippedPortraitInverted} alt="" />
+              <img src="/images/about/kintohub.jpg" className={styles.clippedKinto} alt="" />
+              <img src="/images/about/skiing.jpg" className={styles.clippedPortrait} alt="" />
+            
+            </Parallax>
+            </div>
+
+            <div className={styles.images}>
+
+              <Parallax 
+              offsetXMax={200}
+              offsetXMin={-100}
+              >
+              >
+              <img src="/images/about/painting.jpg" className={styles.clippedPortraitInverted} alt="" />
+              <img src="/images/about/morehiking.jpg" className={styles.clippedInverted} alt="" />
+              
+       
+              <img src="/images/about/purple.jpeg" className={styles.clippedPortrait} alt="" />
+              <img src="/images/about/plants.jpg" className={styles.clippedInverted} alt="" />
+        
+            
+            </Parallax>
+          </div>
+          </div>
+       
       </Container>
     )
   }

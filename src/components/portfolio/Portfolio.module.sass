@@ -14,7 +14,7 @@ $green: rgba(27, 153, 139, 1)
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
   justify-content: space-between
-  margin: 80px auto
+  margin: 80px auto 100px
 
 .titles
   h2
@@ -32,11 +32,14 @@ $green: rgba(27, 153, 139, 1)
     .pathSquareTopSmall
       animation: moveSquareTopSmall 7s linear infinite
 
-.heading:hover
+.heading:hover, .cubeHeading:hover
   .cube
     animation: spin 7s infinite linear
   h2
     color: $lightGreen
+
+.cubeHeading
+  position: relative
 
 .pathLeft, .pathRight, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
   position: absolute
@@ -80,7 +83,7 @@ $green: rgba(27, 153, 139, 1)
 .cube
   -webkit-transform-style: preserve-3d
   // -webkit-animation: spin 7s infinite linear
-  position: relative
+  position: absolute
   width: 100px
   height: 100px
   top: 50%
@@ -122,6 +125,42 @@ $green: rgba(27, 153, 139, 1)
 .images
   width: 60vw
   margin: 0 auto
+
+.scribbles
+  display: none
+  position: absolute
+  width: 150px
+
+.scribblesStatic
+  display: none
+
+.scribbleOuter
+  position: relative
+
+@media (min-width: 1125px)
+  .scribblesStatic
+    width: 200px
+    height: 200px
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -100px
+    margin-top: -100px
+
+  .scribbleOuter:hover
+    .scribbles
+      display: block
+      width: 200px
+      height: 200px
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-left: -100px
+      margin-top: -100px
+    .scribblesStatic
+      display: none
 
 @keyframes spin
   0%

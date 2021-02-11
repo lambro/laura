@@ -37,6 +37,10 @@ class Experience extends Component {
                 BSc. (Honours) <b>Environmental Science</b> 2001 - 2005
                 Kings College London, University of London, London
               </h2>
+
+            <img className={styles.arrows} src="/images/arrows_down_singular.png" alt="" />
+
+
               <Parallax
                 className={styles.triangle}
                 offsetYMax={70}
@@ -88,6 +92,8 @@ class Experience extends Component {
                 React / Node.js / API communication / GraphQL Microservices
               </h2>
               <h2>Unit testing</h2>
+
+              
             </div>
 
             <div className={styles.right}>
@@ -114,6 +120,7 @@ class Experience extends Component {
                 Umbraco.
               </h2>
             </div>
+
           </div>
           <div className={styles.third}>
             <div className={styles.left}>
@@ -155,8 +162,12 @@ class Experience extends Component {
                 Umbraco and Sitecore CMS systems. Following this I went on to work with a full stack team at Fuse where we were integrating Ruby with Backbone Marionette.
                 My most recent experience was with a React stack at KintoHub, where we worked in microservices and a complete separation of interests.
                 The front end communicated with back end services exclusively via APIs, using REST at first and then via GraphQL.
+           
               </h2>
+
+
             </div>
+
           </div>
           <div className={styles.fourth}>
             <div className={styles.left}>
@@ -173,10 +184,7 @@ class Experience extends Component {
               <h2>Horticulture</h2>
             </div>
           </div>
-          <div className={styles.fifth}>
-            <img src="/images/triangle.svg" alt="" />
           </div>
-        </div>
       </div>
     )
   }

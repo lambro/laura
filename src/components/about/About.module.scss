@@ -50,7 +50,7 @@
 }
 
 h1 {
-  color: #121f50;
+  color: #ffffff;
 }
 
 .imageAndText {
@@ -150,9 +150,25 @@ figure {
   }
 }
 
+.fifth {
+  display: none;
+}
 /* media queries  */
 
 @media (min-width: 1125px) {
+  .fifth {
+    display: grid;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    grid-auto-rows: min-content;
+    grid-gap: 20px;
+    padding: 20px;
+    .images {
+      margin: 10px auto 6px;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+    }
+  }
   .aboutMe {
     height: calc(100vh - 40px);
     margin-top: 40px;
@@ -188,6 +204,13 @@ figure {
     left: 260px;
   }
 
+  .borderImageOne {
+    position: relative;
+    z-index: 2;
+    left: 260px;
+    width: 200px;
+  }
+
   .sectionMyLife {
     grid-template-columns: 20% 20px 1fr;
     height: 100vh;
@@ -198,8 +221,53 @@ figure {
   }
 
   .clipped {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+  }
+
+  .clippedKinto {
+    width: 200px;
+    height: 150px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    z-index: 1;
+  }
+  .clippedSF {
+    width: 200px;
+    height: 250px;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    z-index: 1;
+  }
+  .clippedInverted {
+    width: 200px;
+    height: 200px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    z-index: 1;
+  }
+
+  .clippedPortraitInverted {
+    width: 200px;
+    height: 300px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    z-index: 1;
+  }
+
+  .clippedPortrait {
+    width: 200px;
+    height: 300px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+  }
+  .clippedBoxing {
+    width: 200px;
+    height: 200px;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: 1;

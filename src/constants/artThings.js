@@ -128,7 +128,7 @@ export const art = {
     },
   
     {
-      src: '/images/PXL_20201218_181211326 (1).jpg',
+      src: '/images/PXL_20201208_160705833.jpg',
       width: 1.5,
       height: 2
     },

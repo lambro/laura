@@ -117,7 +117,7 @@ class Portfolio extends Component {
             </svg>
           </h2>
 
-          <div className={styles.heading}>
+          <div className={styles.cubeHeading}>
             <div className={styles.cube}>
               <div className={styles.topCube}></div>
               <div className={styles.rightCube}></div>
@@ -131,51 +131,50 @@ class Portfolio extends Component {
             </h2>
           </div>
 
-<div className={styles.scribbleOuter}>
-          <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
-          <img className={styles.scribblesStatic} src="/images/drawing_outline_static.png" alt="scribble" />
-
-          <h2 onClick={() => this.selectItem('digitalArtThings')}>Drawings</h2>
-</div>
+          <div className={styles.scribbleOuter}>
+            <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
+            <img className={styles.scribblesStatic} src="/images/drawing_outline_static.svg" alt="scribble" />
+            <h2 onClick={() => this.selectItem('digitalArtThings')}>Drawings</h2>
+          </div>
         </div>
 
 
-                <div className={styles.images}>
+        <div className={styles.images}>
 
-      <PortfolioSection
-          pose={this.state.section === 'codeScreenShots' ? 'visible' : 'hidden'}
-        >
-          {this.state.section === 'codeScreenShots' && (
-            <Gallery photos={art['codeScreenShots']} margin={4} />
-          )}
-        </PortfolioSection>
+          <PortfolioSection
+              pose={this.state.section === 'codeScreenShots' ? 'visible' : 'hidden'}
+            >
+              {this.state.section === 'codeScreenShots' && (
+                <Gallery photos={art['codeScreenShots']} margin={4} />
+              )}
+            </PortfolioSection>
 
-        <PortfolioSection
-          pose={this.state.section === 'pixelThings' ? 'visible' : 'hidden'}
-        >
-          {this.state.section === 'pixelThings' && (
-            <Gallery photos={art['pixelThings']} margin={4} />
-          )}
-        </PortfolioSection>
+            <PortfolioSection
+              pose={this.state.section === 'pixelThings' ? 'visible' : 'hidden'}
+            >
+              {this.state.section === 'pixelThings' && (
+                <Gallery photos={art['pixelThings']} margin={4} />
+              )}
+            </PortfolioSection>
 
-        <PortfolioSection
-          pose={
-            this.state.section === 'digitalArtThings' ? 'visible' : 'hidden'
-          }
-        >
-          {this.state.section === 'digitalArtThings' && (
-            <Gallery photos={art['digitalArtThings']} margin={4} />
-          )}
-        </PortfolioSection>
+            <PortfolioSection
+              pose={
+                this.state.section === 'digitalArtThings' ? 'visible' : 'hidden'
+              }
+            >
+              {this.state.section === 'digitalArtThings' && (
+                <Gallery photos={art['digitalArtThings']} margin={4} />
+              )}
+            </PortfolioSection>
 
-        <PortfolioSection
-          pose={this.state.section === 'isometricThings' ? 'visible' : 'hidden'}
-        >
-          {this.state.section === 'isometricThings' && (
-            <Gallery photos={art['isometricThings']} margin={4} />
-          )}
-        </PortfolioSection>
-                </div>
+            <PortfolioSection
+              pose={this.state.section === 'isometricThings' ? 'visible' : 'hidden'}
+            >
+              {this.state.section === 'isometricThings' && (
+                <Gallery photos={art['isometricThings']} margin={4} />
+              )}
+            </PortfolioSection>
+          </div>
   
       </div>
     )
