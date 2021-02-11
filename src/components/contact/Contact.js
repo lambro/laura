@@ -12,13 +12,23 @@ class Contact extends Component {
         </div>
 
         <div className={styles.logos}>
-          <a href="https://www.linkedin.com/in/lauraambroseftw/" className={styles.logo}> <img src="/images/icons/004-linkedin.svg" alt="triangle" /></a>
+          <a href="https://www.linkedin.com/in/lauraambroseftw/" className={styles.logo}> 
+          <img src="/images/icons/004-linkedin.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </a>
           
           <a href="https://twitter.com/voodoolawz" className={styles.logo}>
              <img src="/images/icons/001-twitter.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
           </ a>
-          <a href="https://www.instagram.com/veryfluffylamb/" className={styles.logo}> <img src="/images/icons/003-instagram.svg" alt="triangle" /></a>
-          <a href="https://github.com/lambro" className={styles.logo}> <img src="/images/icons/005-github.svg" alt="triangle" /></a>
+          <a href="https://www.instagram.com/veryfluffylamb/" className={styles.logo}> 
+          <img src="/images/icons/003-instagram.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </a>
+          <a href="https://github.com/lambro" className={styles.logo}> 
+          <img src="/images/icons/005-github.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </a>
         </div>
 
         <div>

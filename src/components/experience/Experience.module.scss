@@ -175,15 +175,19 @@
 }
 
 .fifth {
-  height: 200vh;
-  display: grid;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 1);
+  display: none;
 }
 
 /* // fixing the lines */
 
 @media (min-width: 1125px) {
+  .fifth {
+    height: 200vh;
+    display: grid;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+  }
+
   .left {
     padding-left: 10px;
   }

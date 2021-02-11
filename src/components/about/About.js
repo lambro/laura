@@ -20,7 +20,7 @@ class About extends Component {
               Most recently working in <strong>react</strong>and
               <strong> node.js</strong>
             </h2>
-            <h2>A Master in Science.</h2>
+            <h2>A Master of Science.</h2>
             <h2>
               Concurrently a lover of, and allergic to, <strong>cats </strong>and<strong> Nutella</strong>.
             </h2>
@@ -148,18 +148,18 @@ class About extends Component {
             <h4>
               I made an effort to get into jobs that I would wake up in the
               morning and look forward to going in to do, first at advertising
-              agencies, then went on to do some modelling, DJing, TV work and
-              play bass guitar in a band.
+              agencies, then modelling, DJing, TV work and
+              playing bass guitar in a band.
             </h4>
             <h4>
               I then decided to return to London and, after a year back acclimatising, started
-              experimenting with coding and ruby on the advice of many of my
+              experimenting with coding and Ruby on the advice of many of my
               close friends, who described me as a "massive geek who just didn't
               know it yet". 
-              I found coding enjoyable and decided that I wanted to do it everyday so took steps to make this part
-              of my life and work with my courses at General Assembly. Now its
-              been years since I typed my first lines of code I am still happy I
-              made the leap, coding never gets boring and I always have
+              I found coding enjoyable and decided that I wanted to do it everyday, so took steps to make this part
+              of my life and work with my courses at General Assembly. It has now
+              been years since I typed my first lines of code and I am still happy I
+              made the leap. Coding never gets boring and I always have
               something new to play with.
             </h4>
           </div>

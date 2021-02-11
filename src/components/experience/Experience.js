@@ -34,7 +34,7 @@ class Experience extends Component {
                 Hygiene and Tropical Medicine, London
               </h2>
               <h2>
-                BSc. (Honours) <b>Environmental Science</b> 2:2 2001 - 2005
+                BSc. (Honours) <b>Environmental Science</b> 2001 - 2005
                 Kings College London, University of London, London
               </h2>
               <Parallax
@@ -123,10 +123,10 @@ class Experience extends Component {
             <div className={styles.right}>
               <h2>
                 <b>JavaScript</b> I have been working with Javascript in various
-                forms since I began. Initially I worked on large projects using
+                forms since I began coding. Initially I worked on large projects using
                 Javascript, JQuery and AngularJS to display visuals using data
                 from our clients API. Following this I went on to work on a
-                social learning web app set in a Backbone-Marionette stack.
+                social learning web app set in a Backbone-Marionette stack. More recently I worked on deployment software in React and Redux.
               </h2>
               <h2>
                 <b>Style</b> I have had a lot of experience with CSS throughout
@@ -136,7 +136,7 @@ class Experience extends Component {
                 LESS. Experimenting with CSS is a lot of fun, and more recently
                 I have been playing with SVG design and animation. In my day
                 to day work life I build fully responsive pages and components
-                to design, working with designers to bring their flat designs to
+               , working with designers to bring their flat designs to
                 life with animations and consideration of the full UX experience
                 on interactive platforms.
               </h2>
@@ -146,7 +146,7 @@ class Experience extends Component {
                 developers I have had valuable experience working with GIT on
                 collaborative projects and with Webpack, Circle CI, QA engineers
                 and unit testing as integral parts of my day to day work
-                processes.
+                processes. I have built production grade websites alone making efforts for good SEO and loading times.
               </h2>
               <h2>
                 <b>Integration</b> As a front end developer integration and
@@ -154,7 +154,7 @@ class Experience extends Component {
                 worked in a .NET stack at Durable, integrating with C# in
                 Umbraco and Sitecore CMS systems. Following this I went on to work with a full stack team at Fuse where we were integrating Ruby with Backbone Marionette.
                 My most recent experience was with a React stack at KintoHub, where we worked in microservices and a complete separation of interests.
-                the front end communicated with back end services exclusively via APIs, using REST at first and then via GraphQL.
+                The front end communicated with back end services exclusively via APIs, using REST at first and then via GraphQL.
               </h2>
             </div>
           </div>

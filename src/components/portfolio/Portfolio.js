@@ -119,22 +119,30 @@ class Portfolio extends Component {
 
           <div className={styles.heading}>
             <div className={styles.cube}>
-              <div className={styles.topCube}>Top</div>
-              <div className={styles.rightCube}>Right</div>
-              <div className={styles.bottomCube}>Bottom</div>
-              <div className={styles.leftCube}>Left</div>
-              <div className={styles.frontCube}>Front</div>
-              <div className={styles.backCube}>Back</div>
+              <div className={styles.topCube}></div>
+              <div className={styles.rightCube}></div>
+              <div className={styles.bottomCube}></div>
+              <div className={styles.leftCube}></div>
+              <div className={styles.frontCube}></div>
+              <div className={styles.backCube}></div>
             </div>
             <h2 onClick={() => this.selectItem('isometricThings')}>
               Isometric and 3D
             </h2>
           </div>
 
+<div className={styles.scribbleOuter}>
+          <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
+          <img className={styles.scribblesStatic} src="/images/drawing_outline_static.png" alt="scribble" />
+
           <h2 onClick={() => this.selectItem('digitalArtThings')}>Drawings</h2>
+</div>
         </div>
 
-        <PortfolioSection
+
+                <div className={styles.images}>
+
+      <PortfolioSection
           pose={this.state.section === 'codeScreenShots' ? 'visible' : 'hidden'}
         >
           {this.state.section === 'codeScreenShots' && (
@@ -167,6 +175,8 @@ class Portfolio extends Component {
             <Gallery photos={art['isometricThings']} margin={4} />
           )}
         </PortfolioSection>
+                </div>
+  
       </div>
     )
   }
