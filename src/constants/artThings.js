@@ -1,43 +1,54 @@
 export const art = {
   codeScreenShots: [
     {
-      src: '/images/doge_colour_gif.gif',
+      src: '/images/screenshots/feedme.png',
       width: 2,
-      height: 2
+      height: 1
     },
     {
-      src: '/images/sepiroth.gif',
+      src: '/images/screenshots/fordfoundation.png',
       width: 2,
-      height: 2
+      height: 1
+    },
+    {
+      src: '/images/screenshots/hackathon.png',
+      width: 2,
+      height: 1
+    },
+    {
+      src: '/images/screenshots/letsplay.png',
+      width: 2,
+      height: 1
+    },
+    {
+      src: '/images/screenshots/yearbook.png',
+      width: 2,
+      height: 1
     }
   ],
   pixelThings: [
     {
       src: '/images/hot chocolate.gif',
-      width: 2,
-      height: 2
+      width: 1,
+      height: 1
     },
     {
       src: '/images/sepiroth.gif',
-      width: 2,
-      height: 2
+      width: 1,
+      height: 1
     },
 
     {
       src: '/images/courageous_thief_elf_anim.gif',
-      width: 2,
-      height: 2
+      width: 1,
+      height: 1
     },
     {
       src: '/images/doge_colour_gif.gif',
-      width: 2,
-      height: 2
+      width: 1,
+      height: 1
     },
-    {
-      src: '/images/flower_pixel_daily.png',
-      width: 4,
-      height: 3
-    },
+  
     {
       src: '/images/Akiraposter.png',
       width: 3,
@@ -74,11 +85,7 @@ export const art = {
       width: 3,
       height: 3
     },
-    {
-      src: '/images/necrolightgmby2.png',
-      width: 4,
-      height: 4
-    }
+ 
   ],
   isometricThings: [
     {
@@ -93,22 +100,50 @@ export const art = {
     }
   ],
   digitalArtThings: [
+  
     {
-      src: '/images/tim_burton_study_export.png',
-      width: 4,
-      height: 3
+      src: '/images/afro.jpg',
+      width: 1,
+      height: 2
     },
     {
-      src: '/images/headdressCrop.png',
+      src: '/images/eyes.jpg',
+      width: 1,
+      height: 2
+    },
+    {
+      src: '/images/20210208081953.png',
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: '/images/20210208082031.png',
       width: 5,
       height: 4
     },
     {
-      src: '/images/greta.png',
-      width: 3,
+      src: '/images/PXL_20210209_052129376.jpg',
+      width: 1.5,
       height: 2
     },
     {
+      src: '/images/PXL_20210110_025235792.jpg',
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: '/images/PXL_20210107_123357974.jpg',
+      width: 1.5,
+      height: 2
+    },
+  
+    {
+      src: '/images/PXL_20201208_160705833.jpg',
+      width: 1.5,
+      height: 2
+    },
+
+        {
       src: '/images/kirby2.png',
       width: 3,
       height: 2
@@ -118,22 +153,12 @@ export const art = {
       width: 3,
       height: 2
     },
-    {
-      src: '/images/chica.png',
-      width: 3,
-      height: 2
-    },
+   
     {
       src: '/images/window.png',
       width: 3,
       height: 2
-    },
-
-    {
-      src: '/images/brushplay.png',
-      width: 1,
-      height: 1
-    },
+    },    
     {
       src: '/images/breakfast.png',
       width: 3,
@@ -145,10 +170,6 @@ export const art = {
       width: 2,
       height: 2
     },
-    {
-      src: '/images/outfitCropped.png',
-      width: 3,
-      height: 2
-    }
+  
   ]
 }

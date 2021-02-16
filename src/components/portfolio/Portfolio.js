@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useCallback} from 'react'
 import posed from 'react-pose'
 import styles from './Portfolio.module.sass'
 import Gallery from 'react-photo-gallery'
@@ -11,9 +11,9 @@ const PortfolioSection = posed.div({
 
 class Portfolio extends Component {
   state = {
-    itemsToShow: 'isometricThings',
+    itemsToShow: 'digitalArtThings',
     isShown: true,
-    section: 'isometricThings'
+    section: 'digitalArtThings'
   }
 
   selectItem = art => {
@@ -24,9 +24,25 @@ class Portfolio extends Component {
     return (
       <div className={styles.portfolio}>
         <h1>Portfolio</h1>
+        <h4>Websites previously worked on</h4>
+
+        <div className={styles.links}>
+          <a href="https://www.kintohub.com/">KintoHub</a>
+          |<a href="https://www.fuseuniversal.com/">Fuse Universal</a>
+          |<a href="https://www.fordfoundation.org/">Ford Foundation</a>
+        </div>
+
+        <h4>Things I have created</h4>
+
 
         <div className={styles.titles}>
-          <h2 onClick={() => this.selectItem('codeScreenShots')}>
+
+           <div className={styles.scribbleOuter}>
+            <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
+            <img className={styles.scribblesStatic} src="/images/drawing_outline_static.svg" alt="scribble" />
+            <h2 onClick={() => this.selectItem('digitalArtThings')} className={this.state.section === 'digitalArtThings' ? styles.highlightedHeading : ''}>Drawings</h2>
+          </div>
+          {/* <h2 onClick={() => this.selectItem('codeScreenShots')}>
             <svg height="25" width="25" className={styles.pathLeft}>
               <polygon
                 points="2, 20, 12,2, 23,23"
@@ -50,9 +66,9 @@ class Portfolio extends Component {
                 }}
               />
             </svg>
-          </h2>
+          </h2> */}
 
-          <h2 onClick={() => this.selectItem('pixelThings')}>
+          <h2 onClick={() => this.selectItem('pixelThings')} className={this.state.section === 'pixelThings' ? styles.highlightedHeading : ''}>
             <svg height="25" width="25" className={styles.pathSquareTopLeft}>
               <polygon
                 points="2, 2, 2,22, 22,22 , 22, 2"
@@ -117,56 +133,61 @@ class Portfolio extends Component {
             </svg>
           </h2>
 
-          <div className={styles.heading}>
+          <div className={styles.cubeHeading}>
             <div className={styles.cube}>
-              <div className={styles.topCube}>Top</div>
-              <div className={styles.rightCube}>Right</div>
-              <div className={styles.bottomCube}>Bottom</div>
-              <div className={styles.leftCube}>Left</div>
-              <div className={styles.frontCube}>Front</div>
-              <div className={styles.backCube}>Back</div>
+              <div className={styles.topCube}></div>
+              <div className={styles.rightCube}></div>
+              <div className={styles.bottomCube}></div>
+              <div className={styles.leftCube}></div>
+              <div className={styles.frontCube}></div>
+              <div className={styles.backCube}></div>
             </div>
-            <h2 onClick={() => this.selectItem('isometricThings')}>
+            <h2 onClick={() => this.selectItem('isometricThings')} className={this.state.section === 'isometricThings' ? styles.highlightedHeading : ''}>
               Isometric and 3D
             </h2>
           </div>
 
-          <h2 onClick={() => this.selectItem('digitalArtThings')}>Drawings</h2>
+         
         </div>
 
-        <PortfolioSection
-          pose={this.state.section === 'codeScreenShots' ? 'visible' : 'hidden'}
-        >
-          {this.state.section === 'codeScreenShots' && (
-            <Gallery photos={art['codeScreenShots']} margin={4} />
-          )}
-        </PortfolioSection>
 
-        <PortfolioSection
-          pose={this.state.section === 'pixelThings' ? 'visible' : 'hidden'}
-        >
-          {this.state.section === 'pixelThings' && (
-            <Gallery photos={art['pixelThings']} margin={4} />
-          )}
-        </PortfolioSection>
+        <div className={styles.images}>
 
-        <PortfolioSection
-          pose={
-            this.state.section === 'digitalArtThings' ? 'visible' : 'hidden'
-          }
-        >
-          {this.state.section === 'digitalArtThings' && (
-            <Gallery photos={art['digitalArtThings']} margin={4} />
-          )}
-        </PortfolioSection>
+          {/* <PortfolioSection
+              pose={this.state.section === 'codeScreenShots' ? 'visible' : 'hidden'}
+            >
+              {this.state.section === 'codeScreenShots' && (
+                <Gallery photos={art['codeScreenShots']} margin={4} />
+              )}
+            </PortfolioSection> */}
 
-        <PortfolioSection
-          pose={this.state.section === 'isometricThings' ? 'visible' : 'hidden'}
-        >
-          {this.state.section === 'isometricThings' && (
-            <Gallery photos={art['isometricThings']} margin={4} />
-          )}
-        </PortfolioSection>
+            <PortfolioSection
+              pose={this.state.section === 'pixelThings' ? 'visible' : 'hidden'}
+            >
+              {this.state.section === 'pixelThings' && (
+                <Gallery photos={art['pixelThings']} margin={4} />
+              )}
+            </PortfolioSection>
+
+            <PortfolioSection
+              pose={
+                this.state.section === 'digitalArtThings' ? 'visible' : 'hidden'
+              }
+            >
+              {this.state.section === 'digitalArtThings' && (
+                <Gallery photos={art['digitalArtThings']} margin={4} />
+              )}
+            </PortfolioSection>
+
+            <PortfolioSection
+              pose={this.state.section === 'isometricThings' ? 'visible' : 'hidden'}
+            >
+              {this.state.section === 'isometricThings' && (
+                <Gallery photos={art['isometricThings']} margin={4} />
+              )}
+            </PortfolioSection>
+          </div>
+  
       </div>
     )
   }

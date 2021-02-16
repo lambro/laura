@@ -12,15 +12,19 @@ $green: rgba(27, 153, 139, 1)
 
 .titles
   display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr
   justify-content: space-between
-  margin: 80px auto
+  margin: 0px auto 0px
+  padding: 50px 0 120px
 
 .titles
   h2
     color: #ffffff
     position: relative
     transition: all 0.2s ease
+    &.highlightedHeading
+      color: $lightGreen
+
   h2:hover
     color: $lightGreen
     .pathLeft
@@ -32,11 +36,14 @@ $green: rgba(27, 153, 139, 1)
     .pathSquareTopSmall
       animation: moveSquareTopSmall 7s linear infinite
 
-.heading:hover
+.heading:hover, .cubeHeading:hover
   .cube
     animation: spin 7s infinite linear
   h2
     color: $lightGreen
+
+.cubeHeading
+  position: relative
 
 .pathLeft, .pathRight, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
   position: absolute
@@ -80,7 +87,7 @@ $green: rgba(27, 153, 139, 1)
 .cube
   -webkit-transform-style: preserve-3d
   // -webkit-animation: spin 7s infinite linear
-  position: relative
+  position: absolute
   width: 100px
   height: 100px
   top: 50%
@@ -101,36 +108,82 @@ $green: rgba(27, 153, 139, 1)
   transform: rotateX(90deg)
   margin-top: -50px
 
-
 .cube  .rightCube
   transform: rotateY(90deg)
   margin-left: 50px
-
 
 .cube  .bottomCube
   transform: rotateX(-90deg)
   margin-top: 50px
 
-
 .cube .leftCube
   transform: rotateY(-90deg)
   margin-left: -50px
 
-
 .cube  .frontCube
   transform: translateZ(50px)
-
 
 .cube .backCube
   transform: translateZ(-50px) rotateX(180deg)
 
+.images
+  width: 60vw
+  margin: 0 auto
+
+.scribbles
+  display: none
+  position: absolute
+  width: 150px
+
+.scribblesStatic
+  display: none
+
+.scribbleOuter
+  position: relative
+
+@media (min-width: 1125px)
+
+  .links
+    padding: 20px 0 20px
+    width: 100vw
+    display: grid
+    grid-template-columns: repeat(5, auto)
+    grid-gap: 20px
+    justify-content: start
+    color: white
+    align-items: center
+    a
+      font-size: 2em
+
+  .scribblesStatic
+    width: 200px
+    height: 200px
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -100px
+    margin-top: -100px
+
+  .scribbleOuter:hover
+    .scribbles
+      display: block
+      width: 200px
+      height: 200px
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-left: -100px
+      margin-top: -100px
+    .scribblesStatic
+      display: none
 
 @keyframes spin
   0%
     transform: rotateX(-20deg) rotateY(20deg)
   100%
     transform: rotateX(-20deg) rotateY(740deg)
-
 
 @keyframes moveAround
   0%
@@ -233,3 +286,6 @@ $green: rgba(27, 153, 139, 1)
     left: 35%
     transform: scale(1)
     fill: rgba(255, 255, 255, 0.5)
+
+h2.highlightedHeading
+  color: $lightGreen

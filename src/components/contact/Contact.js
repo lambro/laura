@@ -1,11 +1,41 @@
 import React, { Component } from 'react'
-import styles from './Contact.module.css'
+import styles from './Contact.module.scss'
 class Contact extends Component {
   render() {
     return (
       <div className={styles.contact}>
+        <div>
+
         <h1>Contact</h1>
-        <h3>Contact info and social medias go here i guesss</h3>
+
+        <h4>Find me in all the usual places</h4>
+        </div>
+
+        <div className={styles.logos}>
+          <a href="https://www.linkedin.com/in/lauraambroseftw/" className={styles.logo}> 
+          <img src="/images/icons/004-linkedin.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </a>
+          
+          <a href="https://twitter.com/voodoolawz" className={styles.logo}>
+             <img src="/images/icons/001-twitter.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </ a>
+          <a href="https://www.instagram.com/veryfluffylamb/" className={styles.logo}> 
+          <img src="/images/icons/003-instagram.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </a>
+          <a href="https://github.com/lambro" className={styles.logo}> 
+          <img src="/images/icons/005-github.svg" alt="triangle" />
+          <img className={styles.hovered} src="/images/test.png" alt="triangle" />
+          </a>
+        </div>
+
+        <div>
+
+        <p className={styles.attribution}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </div>
+
       </div>
     )
   }
