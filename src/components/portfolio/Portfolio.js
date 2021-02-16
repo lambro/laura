@@ -11,9 +11,9 @@ const PortfolioSection = posed.div({
 
 class Portfolio extends Component {
   state = {
-    itemsToShow: 'pixelThings',
+    itemsToShow: 'digitalArtThings',
     isShown: true,
-    section: 'pixelThings'
+    section: 'digitalArtThings'
   }
 
   selectItem = art => {
@@ -24,6 +24,7 @@ class Portfolio extends Component {
     return (
       <div className={styles.portfolio}>
         <h1>Portfolio</h1>
+        <h4>Websites previously worked on</h4>
 
         <div className={styles.links}>
           <a href="https://www.kintohub.com/">KintoHub</a>
@@ -31,7 +32,16 @@ class Portfolio extends Component {
           |<a href="https://www.fordfoundation.org/">Ford Foundation</a>
         </div>
 
+        <h4>Things I have created</h4>
+
+
         <div className={styles.titles}>
+
+           <div className={styles.scribbleOuter}>
+            <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
+            <img className={styles.scribblesStatic} src="/images/drawing_outline_static.svg" alt="scribble" />
+            <h2 onClick={() => this.selectItem('digitalArtThings')} className={this.state.section === 'digitalArtThings' ? styles.highlightedHeading : ''}>Drawings</h2>
+          </div>
           {/* <h2 onClick={() => this.selectItem('codeScreenShots')}>
             <svg height="25" width="25" className={styles.pathLeft}>
               <polygon
@@ -137,11 +147,7 @@ class Portfolio extends Component {
             </h2>
           </div>
 
-          <div className={styles.scribbleOuter}>
-            <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
-            <img className={styles.scribblesStatic} src="/images/drawing_outline_static.svg" alt="scribble" />
-            <h2 onClick={() => this.selectItem('digitalArtThings')} className={this.state.section === 'digitalArtThings' ? styles.highlightedHeading : ''}>Drawings</h2>
-          </div>
+         
         </div>
 
 
