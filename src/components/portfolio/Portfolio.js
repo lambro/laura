@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useCallback} from 'react'
 import posed from 'react-pose'
 import styles from './Portfolio.module.sass'
 import Gallery from 'react-photo-gallery'
@@ -11,9 +11,9 @@ const PortfolioSection = posed.div({
 
 class Portfolio extends Component {
   state = {
-    itemsToShow: 'codeScreenShots',
+    itemsToShow: 'pixelThings',
     isShown: true,
-    section: 'codeScreenShots'
+    section: 'pixelThings'
   }
 
   selectItem = art => {
@@ -25,8 +25,14 @@ class Portfolio extends Component {
       <div className={styles.portfolio}>
         <h1>Portfolio</h1>
 
+        <div className={styles.links}>
+          <a href="https://www.kintohub.com/">KintoHub</a>
+          |<a href="https://www.fuseuniversal.com/">Fuse Universal</a>
+          |<a href="https://www.fordfoundation.org/">Ford Foundation</a>
+        </div>
+
         <div className={styles.titles}>
-          <h2 onClick={() => this.selectItem('codeScreenShots')}>
+          {/* <h2 onClick={() => this.selectItem('codeScreenShots')}>
             <svg height="25" width="25" className={styles.pathLeft}>
               <polygon
                 points="2, 20, 12,2, 23,23"
@@ -50,9 +56,9 @@ class Portfolio extends Component {
                 }}
               />
             </svg>
-          </h2>
+          </h2> */}
 
-          <h2 onClick={() => this.selectItem('pixelThings')}>
+          <h2 onClick={() => this.selectItem('pixelThings')} className={this.state.section === 'pixelThings' ? styles.highlightedHeading : ''}>
             <svg height="25" width="25" className={styles.pathSquareTopLeft}>
               <polygon
                 points="2, 2, 2,22, 22,22 , 22, 2"
@@ -126,7 +132,7 @@ class Portfolio extends Component {
               <div className={styles.frontCube}></div>
               <div className={styles.backCube}></div>
             </div>
-            <h2 onClick={() => this.selectItem('isometricThings')}>
+            <h2 onClick={() => this.selectItem('isometricThings')} className={this.state.section === 'isometricThings' ? styles.highlightedHeading : ''}>
               Isometric and 3D
             </h2>
           </div>
@@ -134,20 +140,20 @@ class Portfolio extends Component {
           <div className={styles.scribbleOuter}>
             <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
             <img className={styles.scribblesStatic} src="/images/drawing_outline_static.svg" alt="scribble" />
-            <h2 onClick={() => this.selectItem('digitalArtThings')}>Drawings</h2>
+            <h2 onClick={() => this.selectItem('digitalArtThings')} className={this.state.section === 'digitalArtThings' ? styles.highlightedHeading : ''}>Drawings</h2>
           </div>
         </div>
 
 
         <div className={styles.images}>
 
-          <PortfolioSection
+          {/* <PortfolioSection
               pose={this.state.section === 'codeScreenShots' ? 'visible' : 'hidden'}
             >
               {this.state.section === 'codeScreenShots' && (
                 <Gallery photos={art['codeScreenShots']} margin={4} />
               )}
-            </PortfolioSection>
+            </PortfolioSection> */}
 
             <PortfolioSection
               pose={this.state.section === 'pixelThings' ? 'visible' : 'hidden'}

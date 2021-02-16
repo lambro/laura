@@ -102,6 +102,16 @@ export const art = {
   digitalArtThings: [
   
     {
+      src: '/images/afro.jpg',
+      width: 1,
+      height: 2
+    },
+    {
+      src: '/images/eyes.jpg',
+      width: 1,
+      height: 2
+    },
+    {
       src: '/images/20210208081953.png',
       width: 1.5,
       height: 2

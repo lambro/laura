@@ -100,6 +100,12 @@ h1 {
   animation: drawLine 1s 1s ease-in-out forwards;
 }
 
+.path2 {
+  stroke-dasharray: 1440.060302734375 1440.060302734375;
+  stroke-dashoffset: 1440.060302734375;
+  animation: drawLine 10s 1s ease-in-out infinite;
+}
+
 .imageInSvg,
 .imageInSvgMobile {
   display: flex;
@@ -163,8 +169,11 @@ figure {
     grid-auto-rows: min-content;
     grid-gap: 20px;
     padding: 20px;
+    overflow: hidden;
+
     .images {
       margin: 10px auto 6px;
+      width: 100vw;
       display: grid;
       grid-template-columns: repeat(5, auto);
     }
@@ -198,10 +207,22 @@ figure {
     left: 400px;
   }
 
-  .border1 {
+  .border1,
+  .littleBorder,
+  .largeBorder {
     position: relative;
     z-index: 2;
     left: 260px;
+  }
+
+  .littleBorder {
+    left: 0;
+    z-index: 0;
+  }
+
+  .largeBorder {
+    left: 300px;
+    z-index: 0;
   }
 
   .borderImageOne {
@@ -263,7 +284,7 @@ figure {
     height: 300px;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    z-index: 1;
+    z-index: 4;
   }
   .clippedBoxing {
     width: 200px;

@@ -12,15 +12,19 @@ $green: rgba(27, 153, 139, 1)
 
 .titles
   display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr
   justify-content: space-between
-  margin: 80px auto 100px
+  margin: 0px auto 0px
+  padding: 50px 0 120px
 
 .titles
   h2
     color: #ffffff
     position: relative
     transition: all 0.2s ease
+    &.highlightedHeading
+      color: $lightGreen
+
   h2:hover
     color: $lightGreen
     .pathLeft
@@ -138,6 +142,19 @@ $green: rgba(27, 153, 139, 1)
   position: relative
 
 @media (min-width: 1125px)
+
+  .links
+    padding: 100px 0
+    width: 100vw
+    display: grid
+    grid-template-columns: repeat(5, auto)
+    grid-gap: 20px
+    justify-content: start
+    color: white
+    align-items: center
+    a
+      font-size: 2em
+
   .scribblesStatic
     width: 200px
     height: 200px
@@ -269,3 +286,6 @@ $green: rgba(27, 153, 139, 1)
     left: 35%
     transform: scale(1)
     fill: rgba(255, 255, 255, 0.5)
+
+h2.highlightedHeading
+  color: $lightGreen
