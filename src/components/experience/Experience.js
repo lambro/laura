@@ -111,7 +111,7 @@ class Experience extends Component {
               <h2>Unit testing</h2>
 
               <h2>
-                <b>Durable Digital</b> Junior Front End Developer
+                <b>Durable Digital</b> Front End Developer
               </h2>
               <h2>March 2015 - May 2016</h2>
               <h2>(1 year 3 months) London Front end engineering</h2>
