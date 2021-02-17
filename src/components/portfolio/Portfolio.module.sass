@@ -8,7 +8,8 @@ $green: rgba(27, 153, 139, 1)
 
 .portfolio h2
   cursor: pointer
-  text-align: center
+  color: $lightGreen
+  padding: 20px 0
 
 .titles
   display: grid
@@ -22,6 +23,7 @@ $green: rgba(27, 153, 139, 1)
     color: #ffffff
     position: relative
     transition: all 0.2s ease
+    text-align: center
     &.highlightedHeading
       color: $lightGreen
 
@@ -135,7 +137,7 @@ $green: rgba(27, 153, 139, 1)
   position: absolute
   width: 150px
 
-.scribblesStatic
+.scribblesStatic, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
   display: none
 
 .scribbleOuter
@@ -143,8 +145,8 @@ $green: rgba(27, 153, 139, 1)
 
 @media (min-width: 1125px)
 
-  .links
-    padding: 20px 0 20px
+  .links, .linksTests
+    padding: 10px 0 20px
     width: 100vw
     display: grid
     grid-template-columns: repeat(5, auto)
@@ -155,10 +157,16 @@ $green: rgba(27, 153, 139, 1)
     a
       font-size: 2em
 
+  .linksTests
+    padding: 10px 0 50px
+    grid-template-columns: repeat(3, auto)
+
+  .scribblesStatic, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
+    display: block
+
   .scribblesStatic
     width: 200px
     height: 200px
-    display: block
     position: absolute
     top: 50%
     left: 50%

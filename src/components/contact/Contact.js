@@ -1,16 +1,37 @@
 import React, { Component } from 'react'
 import styles from './Contact.module.scss'
+import { Parallax } from 'react-scroll-parallax'
+
 class Contact extends Component {
   render() {
     return (
       <div className={styles.contact}>
-        <div>
+
+        <div className={styles.main}>
+
+        <div className={styles.left}>
 
         <h1>Contact</h1>
 
-        <h4>Find me in all the usual places</h4>
+        <h4>I am currently <strong>in Singapore</strong> and <strong>available for hire </strong></h4>
+        
+        <h4> You can find me in all the usual places.</h4>
+
         </div>
 
+         <div className={styles.theBorderLine}>
+            <Parallax
+              offsetYMax={200}
+              offsetYMin={-200}
+              offsetXMax={0}
+              offsetXMin={0}
+            >
+              <div className={styles.line} />
+            </Parallax>
+          </div>
+
+        <div className={styles.left}>
+          
         <div className={styles.logos}>
           <a href="https://www.linkedin.com/in/lauraambroseftw/" className={styles.logo}> 
           <img src="/images/icons/004-linkedin.svg" alt="triangle" />
@@ -31,10 +52,13 @@ class Contact extends Component {
           </a>
         </div>
 
-        <div>
+
+        </div>
+      
+        </div>
+
 
         <p className={styles.attribution}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-        </div>
 
       </div>
     )

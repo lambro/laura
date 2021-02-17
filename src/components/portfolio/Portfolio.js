@@ -24,22 +24,32 @@ class Portfolio extends Component {
     return (
       <div className={styles.portfolio}>
         <h1>Portfolio</h1>
-        <h4>Websites previously worked on</h4>
+        
+        
+        <h2>Websites</h2>
 
         <div className={styles.links}>
           <a href="https://www.kintohub.com/">KintoHub</a>
           |<a href="https://www.fuseuniversal.com/">Fuse Universal</a>
           |<a href="https://www.fordfoundation.org/">Ford Foundation</a>
         </div>
+      
+        <h2>Previous Code Tests</h2> 
 
-        <h4>Things I have created</h4>
+  <div className={styles.linksTests}>
+          <a href="http://codepen.io/Lamb/pen/jmrMmy">Bee Hive Test</a>
+          |<a href="http://laura-the.ninja/movie-library/#!/">Movie Library</a>
+        </div>
+
+
+        <h2>Things I have created</h2>
 
 
         <div className={styles.titles}>
 
            <div className={styles.scribbleOuter}>
             <img className={styles.scribbles} src="/images/drawing_outline.png" alt="scribble" />
-            <img className={styles.scribblesStatic} src="/images/drawing_outline_static.svg" alt="scribble" />
+            <img className={styles.scribblesStatic} src="/images/drawing_outline_static.png" alt="scribble" />
             <h2 onClick={() => this.selectItem('digitalArtThings')} className={this.state.section === 'digitalArtThings' ? styles.highlightedHeading : ''}>Drawings</h2>
           </div>
           {/* <h2 onClick={() => this.selectItem('codeScreenShots')}>
