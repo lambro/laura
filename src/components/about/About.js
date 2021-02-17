@@ -133,32 +133,19 @@ class About extends Component {
       
    
         <div className={styles.fifth}>
-          {/* <div className={styles.images}>
-
-            <Parallax 
-            offsetXMax={100}
-            offsetXMin={-100}
-            >
-            <img src="/images/about/hiking.jpg" className={styles.clipped} alt="" />
-            <img src="/images/about/sanfransisco.jpg" className={styles.clippedSF} alt="" />
-            <img src="/images/about/gloves.jpg" className={styles.clippedBoxing} alt="" />
-            
-            </Parallax>
-          </div> */}
-         
           <div className={styles.images}>
 
           <Parallax
-              offsetXMax={1000}
+              offsetXMax={300}
               className={styles.littleBorder}
               offsetXMin={0}
-              offsetYMax={100}
-              offsetYMin={-200}
+              offsetYMax={10}
+              offsetYMin={-10}
             >
-              <svg height="100" width="100">
+              <svg height="300" width="300">
                 <polygon
-                  id="littleTriangle"
-                  points="45, 5, 5, 90, 90, 90"
+                  id="bigTriangle"
+                  points="145, 5, 5, 290, 290, 290"
                   className={styles.path2}
                   style={{
                     stroke: 'rgba(205, 83, 52, 1)',
