@@ -2,6 +2,7 @@
   "name": "laura",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://testing.laura-the.ninja/",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

@@ -11,7 +11,6 @@ class About extends Component {
   render() {
     return (
       <Container>
-
         {/* top section */}
         <div className={styles.aboutMe}>
           <div>
@@ -24,7 +23,8 @@ class About extends Component {
             </h2>
             <h2>A Master of Science.</h2>
             <h2>
-              Concurrently a lover of, and allergic to, <strong>cats </strong>and<strong> Nutella</strong>.
+              Concurrently a lover of, and allergic to, <strong>cats </strong>
+              and<strong> Nutella</strong>.
             </h2>
             <h2>
               Member of the <strong>console</strong> underclass.
@@ -80,7 +80,7 @@ class About extends Component {
               </svg>
             </Parallax>
           </div>
-     
+
           <div className={styles.imageInSvg}>
             <Parallax
               className={styles.border}
@@ -130,12 +130,9 @@ class About extends Component {
           </div>
         </div>
 
-      
-   
         <div className={styles.fifth}>
           <div className={styles.images}>
-
-          <Parallax
+            <Parallax
               offsetXMax={300}
               className={styles.littleBorder}
               offsetXMin={0}
@@ -158,40 +155,40 @@ class About extends Component {
               </svg>
             </Parallax>
 
-
-            <Parallax 
-              offsetXMax={-100}
-            offsetXMin={100}
-            >
-              <img src="/images/about/junji.jpg" className={styles.clippedInverted} alt="" />
-              <img src="/images/about/daytoday.jpg" className={styles.clippedPortrait} alt="" />
-              <img src="/images/about/junk.jpg" className={styles.clippedInverted} alt="" />
-              <img src="/images/about/boxing.jpg" className={styles.clippedPortraitInverted} alt="" />
-              <img src="/images/about/kintohub.jpg" className={styles.clippedKinto} alt="" />
-              <img src="/images/about/skiing.jpg" className={styles.clippedPortrait} alt="" />
-          
+            <Parallax offsetXMax={-100} offsetXMin={100}>
+              <img
+                src="/images/about/junji.jpg"
+                className={styles.clippedInverted}
+                alt=""
+              />
+              <img
+                src="/images/about/daytoday.jpg"
+                className={styles.clippedPortrait}
+                alt=""
+              />
+              <img
+                src="/images/about/junk.jpg"
+                className={styles.clippedInverted}
+                alt=""
+              />
+              <img
+                src="/images/about/boxing.jpg"
+                className={styles.clippedPortraitInverted}
+                alt=""
+              />
+              <img
+                src="/images/about/kintohub.jpg"
+                className={styles.clippedKinto}
+                alt=""
+              />
+              <img
+                src="/images/about/skiing.jpg"
+                className={styles.clippedPortrait}
+                alt=""
+              />
             </Parallax>
           </div>
-
-          {/* <div className={styles.images}>
-
-            <Parallax 
-            offsetXMax={200}
-            offsetXMin={-100}
-            >
-            >
-              <img src="/images/about/painting.jpg" className={styles.clippedPortraitInverted} alt="" />
-              <img src="/images/about/morehiking.jpg" className={styles.clippedInverted} alt="" />
-              
-        
-              <img src="/images/about/purple.jpeg" className={styles.clippedPortrait} alt="" />
-              <img src="/images/about/plants.jpg" className={styles.clippedInverted} alt="" />
-      
-            
-            </Parallax>
-          </div> */}
         </div>
-       
 
         <div className={styles.sectionMyLife}>
           <h1>The Details</h1>
@@ -207,31 +204,31 @@ class About extends Component {
           </div>
           <div className={styles.textualInformation}>
             <h4>
-              After graduating from the London School of Hygiene
-              and Tropical Medicine, I decided to take some time out abroad. I moved to Korea, where I taught English at first. 
-              While I was doing this I had a scooter accident, which scared me into squeezing more out of my day to day life.
+              After graduating from the London School of Hygiene and Tropical
+              Medicine, I decided to take some time out abroad. I moved to
+              Korea, where I taught English at first. While I was doing this I
+              had a scooter accident, which scared me into squeezing more out of
+              my day to day life.
             </h4>
             <h4>
               I made an effort to get into jobs that I would wake up in the
               morning and look forward to going in to do, first at advertising
-              agencies, then modelling, DJing, TV work and
-              playing bass guitar in a band.
+              agencies, then modelling, DJing, TV work and playing bass guitar
+              in a band.
             </h4>
             <h4>
-              I then decided to return to London and, after a year back acclimatising, started
-              experimenting with coding and Ruby on the advice of many of my
-              close friends, who described me as a "massive geek who just didn't
-              know it yet". 
-              I found coding enjoyable and decided that I wanted to do it everyday, so took steps to make this part
-              of my life and work with my courses at General Assembly. It has now
-              been years since I typed my first lines of code and I am still happy I
-              made the leap. Coding never gets boring and I always have
-              something new to play with.
+              I then decided to return to London and, after a year back
+              acclimatising, started experimenting with coding and Ruby on the
+              advice of many of my close friends, who described me as a "massive
+              geek who just didn't know it yet". I found coding enjoyable and
+              decided that I wanted to do it everyday, so took steps to make
+              this part of my life and work with my courses at General Assembly.
+              It has now been years since I typed my first lines of code and I
+              am still happy I made the leap. Coding never gets boring and I
+              always have something new to play with.
             </h4>
           </div>
         </div>
-        
-     
       </Container>
     )
   }
