@@ -23,25 +23,38 @@ class Portfolio extends Component {
   render() {
     return (
       <div className={styles.portfolio}>
-        <h1>Portfolio</h1>
-        
-        
-        <h2>Websites</h2>
 
-        <div className={styles.links}>
-          <a href="https://www.kintohub.com/">KintoHub</a>
-          |<a href="https://www.fuseuniversal.com/">Fuse Universal</a>
-          |<a href="https://www.fordfoundation.org/">Ford Foundation</a>
+        <div className={styles.top}>
+
+          <div className={styles.left}>
+ <h1>Portfolio</h1>
+        
+          </div>
+         
+        <div className={styles.right}>
+          <h2>Websites</h2>
+
+          <div className={styles.links}>
+            <a href="https://www.kintohub.com/">KintoHub</a>
+            |<a href="https://www.fuseuniversal.com/">Fuse Universal</a>
+            |<a href="https://www.fordfoundation.org/">Ford Foundation</a>
+          </div>
+        
+          <h2>Previous Code Tests</h2> 
+
+          <div className={styles.linksTests}>
+            <a href="http://codepen.io/Lamb/pen/jmrMmy">Bee Hive Test</a>
+           |<a href="http://laura-the.ninja/movie-library/#!/">Movie Library</a>
+          </div>
+
         </div>
+
+
+
+          </div>
       
-        <h2>Previous Code Tests</h2> 
 
-  <div className={styles.linksTests}>
-          <a href="http://codepen.io/Lamb/pen/jmrMmy">Bee Hive Test</a>
-          |<a href="http://laura-the.ninja/movie-library/#!/">Movie Library</a>
-        </div>
-
-
+ <div className={styles.bottom}></div>
         <h2>Things I have created</h2>
 
 

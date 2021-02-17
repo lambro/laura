@@ -19,3 +19,5 @@ Sooner
   Later
 
 - add animation to bottom of experience page
+
+-- stopped 12:12 currently setting up left right layout for top section of portfolio page
