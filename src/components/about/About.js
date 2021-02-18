@@ -34,11 +34,7 @@ class About extends Component {
             </h2>
           </div>
           <div className={styles.imageInSvgMobile}>
-            <Parallax
-              className={styles.border}
-              offsetXMax={100}
-              offsetXMin={-100}
-            >
+            <Parallax x={[100, -100]} className={styles.border}>
               <svg height="200" width="200">
                 <polygon
                   id="triangleMobile"
@@ -55,15 +51,9 @@ class About extends Component {
               </svg>
             </Parallax>
 
-            <Parallax>
-              <img src="/images/laura2.png" className={styles.clipped} alt="" />
-            </Parallax>
+            <img src="/images/laura2.png" className={styles.clipped} alt="" />
 
-            <Parallax
-              offsetXMax={200}
-              className={styles.border1}
-              offsetXMin={-200}
-            >
+            <Parallax x={[200, -200]} className={styles.border1}>
               <svg height="300" width="300">
                 <polygon
                   id="triangleTopMobile"
@@ -82,11 +72,7 @@ class About extends Component {
           </div>
 
           <div className={styles.imageInSvg}>
-            <Parallax
-              className={styles.border}
-              offsetXMax={100}
-              offsetXMin={-100}
-            >
+            <Parallax className={styles.border} x={[-80, 100]}>
               <svg height="360" width="360">
                 <polygon
                   id="triangle"
@@ -107,11 +93,7 @@ class About extends Component {
               <img src="/images/laura2.png" className={styles.clipped} alt="" />
             </Parallax>
 
-            <Parallax
-              offsetXMax={-200}
-              className={styles.border1}
-              offsetXMin={-100}
-            >
+            <Parallax x={[0, -120]} className={styles.border1}>
               <svg height="460" width="460">
                 <polygon
                   id="triangleTop"
@@ -131,36 +113,14 @@ class About extends Component {
         </div>
 
         <div className={styles.fifth}>
-          <div className={styles.images}>
-            <Parallax
-              offsetXMax={300}
-              className={styles.littleBorder}
-              offsetXMin={0}
-              offsetYMax={10}
-              offsetYMin={-10}
-            >
-              <svg height="300" width="300">
-                <polygon
-                  id="bigTriangle"
-                  points="145, 5, 5, 290, 290, 290"
-                  className={styles.path2}
-                  style={{
-                    stroke: 'rgba(205, 83, 52, 1)',
-                    strokeWidth: 5,
-                    strokeLinejoin: 'round',
-                    strokeLinecap: 'round',
-                    fill: 'none'
-                  }}
-                />
-              </svg>
-            </Parallax>
+          <img
+            src="/images/backgroundLines.svg"
+            alt="background lines"
+            className={styles.arrowLine}
+          />
 
-            <Parallax offsetXMax={-100} offsetXMin={100}>
-              <img
-                src="/images/about/junji.jpg"
-                className={styles.clippedInverted}
-                alt=""
-              />
+          <div className={styles.images}>
+            <Parallax x={[100, -100]}>
               <img
                 src="/images/about/daytoday.jpg"
                 className={styles.clippedPortrait}
@@ -193,12 +153,7 @@ class About extends Component {
         <div className={styles.sectionMyLife}>
           <h1>The Details</h1>
           <div className={styles.theBorderLine}>
-            <Parallax
-              offsetYMax={200}
-              offsetYMin={-200}
-              offsetXMax={0}
-              offsetXMin={0}
-            >
+            <Parallax y={[100, -100]}>
               <div className={styles.line} />
             </Parallax>
           </div>

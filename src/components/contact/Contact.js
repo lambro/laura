@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styles from './Contact.module.scss'
-import { Parallax } from 'react-scroll-parallax'
 
 class Contact extends Component {
   render() {
@@ -19,14 +18,7 @@ class Contact extends Component {
           </div>
 
           <div className={styles.theBorderLine}>
-            <Parallax
-              offsetYMax={200}
-              offsetYMin={-200}
-              offsetXMax={0}
-              offsetXMin={0}
-            >
-              <div className={styles.line} />
-            </Parallax>
+            <div className={styles.line} />
           </div>
 
           <div className={styles.left}>

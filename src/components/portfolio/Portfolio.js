@@ -1,5 +1,4 @@
-import React, { Component, useState, useCallback } from 'react'
-import { Parallax } from 'react-scroll-parallax'
+import React, { Component } from 'react'
 import posed from 'react-pose'
 import styles from './Portfolio.module.sass'
 import Gallery from 'react-photo-gallery'

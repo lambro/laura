@@ -77,12 +77,6 @@ h1 {
   left: 23%;
 }
 
-.border1 {
-  position: absolute;
-  z-index: 2;
-  left: 30%;
-}
-
 .aboutMe {
   grid-template-columns: 80%;
 }
@@ -113,7 +107,13 @@ h1 {
 }
 
 .imageInSvgMobile {
-  padding: 40px;
+  .border1 {
+    z-index: 3;
+  }
+  .clipped {
+    position: absolute;
+    z-index: 2;
+  }
 }
 
 .imageInSvg {
@@ -170,6 +170,10 @@ figure {
     padding: 20px;
     overflow: hidden;
 
+    .arrowLine {
+      position: absolute;
+      width: 90vw;
+    }
     .images {
       margin: 10px auto 6px;
       width: 100vw;
@@ -203,25 +207,12 @@ figure {
 
   .border {
     position: relative;
-    left: 400px;
+    left: 23%;
   }
 
-  .border1,
-  .littleBorder,
-  .largeBorder {
+  .border1 {
     position: relative;
     z-index: 2;
-    left: 260px;
-  }
-
-  .littleBorder {
-    left: 0;
-    z-index: 0;
-  }
-
-  .largeBorder {
-    left: 300px;
-    z-index: 0;
   }
 
   .borderImageOne {
@@ -241,8 +232,8 @@ figure {
   }
 
   .clipped {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: 1;

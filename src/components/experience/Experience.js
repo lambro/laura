@@ -46,30 +46,24 @@ class Experience extends Component {
 
               <Parallax
                 className={styles.triangle}
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                x={[30, -30]}
+                y={[70, -70]}
                 slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
               <Parallax
                 className={styles.triangle2}
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                x={[30, -30]}
+                y={[70, -70]}
                 slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
               <Parallax
                 className={styles.triangle3}
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                x={[30, -30]}
+                y={[70, -70]}
                 slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
@@ -185,6 +179,13 @@ class Experience extends Component {
               <h2>Running</h2>
               <h2>Yoga</h2>
               <h2>Horticulture</h2>
+            </div>
+
+            <div className={styles.backgroundImage}>
+              <img
+                src="/images/about_me_hobbies_background.svg"
+                alt="monstera gloves and ps5 controller"
+              />
             </div>
           </div>
         </div>
