@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 import posed from 'react-pose'
 import styles from './About.module.scss'
 import { Parallax } from 'react-scroll-parallax'
+import laura from './laura2.png'
+import daytoday from './daytoday.jpg'
+import junk from './junk.jpg'
+import boxing from './boxing.jpg'
+import kintohub from './kintohub.jpg'
+import skiing from './skiing.jpg'
 
 const Container = posed.div({
   enter: { staggerChildren: 50 }
@@ -51,7 +57,7 @@ class About extends Component {
               </svg>
             </Parallax>
 
-            <img src="/images/laura2.png" className={styles.clipped} alt="" />
+            <img src={laura} className={styles.clipped} alt="" />
 
             <Parallax x={[200, -200]} className={styles.border1}>
               <svg height="300" width="300">
@@ -88,11 +94,7 @@ class About extends Component {
                 />
               </svg>
             </Parallax>
-
-            <Parallax>
-              <img src="/images/laura2.png" className={styles.clipped} alt="" />
-            </Parallax>
-
+            <img src={laura} className={styles.clipped} alt="" />
             <Parallax x={[0, -120]} className={styles.border1}>
               <svg height="460" width="460">
                 <polygon
@@ -121,31 +123,15 @@ class About extends Component {
 
           <div className={styles.images}>
             <Parallax x={[100, -100]}>
+              <img src={daytoday} className={styles.clippedPortrait} alt="" />
+              <img src={junk} className={styles.clippedInverted} alt="" />
               <img
-                src="/images/about/daytoday.jpg"
-                className={styles.clippedPortrait}
-                alt=""
-              />
-              <img
-                src="/images/about/junk.jpg"
-                className={styles.clippedInverted}
-                alt=""
-              />
-              <img
-                src="/images/about/boxing.jpg"
+                src={boxing}
                 className={styles.clippedPortraitInverted}
                 alt=""
               />
-              <img
-                src="/images/about/kintohub.jpg"
-                className={styles.clippedKinto}
-                alt=""
-              />
-              <img
-                src="/images/about/skiing.jpg"
-                className={styles.clippedPortrait}
-                alt=""
-              />
+              <img src={kintohub} className={styles.clippedKinto} alt="" />
+              <img src={skiing} className={styles.clippedPortrait} alt="" />
             </Parallax>
           </div>
         </div>
