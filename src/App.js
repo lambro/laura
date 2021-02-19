@@ -7,6 +7,7 @@ import About from './components/about/About'
 import Experience from './components/experience/Experience'
 import Contact from './components/contact/Contact'
 import Portfolio from './components/portfolio/Portfolio'
+import Error404Page from './components/404/Error404Page'
 import './App.scss'
 const RoutesContainer = posed.div({
   enter: { opacity: 1, beforeChildren: true, delay: 300 },
@@ -58,6 +59,7 @@ class App extends Component {
                     <Route path="/experience" component={Experience} />
                     <Route path="/contact" component={Contact} />
                     <Route path="/portfolio" component={Portfolio} />
+                    <Route component={Error404Page} />
                   </Switch>
                 </RoutesContainer>
               </PoseGroup>

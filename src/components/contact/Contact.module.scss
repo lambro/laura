@@ -9,6 +9,10 @@ $lightGreen: rgba(23, 190, 187, 1);
   grid-template-rows: min-content 1fr 20px;
 }
 
+a.cvLink {
+  color: $lightGreen;
+}
+
 .main {
   display: grid;
   grid-template-rows: min-content 20px min-content;

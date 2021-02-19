@@ -20,13 +20,20 @@ class Contact extends Component {
 
             <h4>
               <strong>
-                <a href="https://docs.google.com/document/d/1vAZOufFaVmiPN5zhJVkD6Dn0n3OzIzH8PSAdcH85z50/edit?usp=sharing">
-                  HERE
+                <a
+                  className={styles.cvLink}
+                  href="https://docs.google.com/document/d/1vAZOufFaVmiPN5zhJVkD6Dn0n3OzIzH8PSAdcH85z50/edit?usp=sharing"
+                >
+                  HERE{' '}
                 </a>
               </strong>
-              copy of my
+              is a copy of my
               <strong>
-                <a href="https://docs.google.com/document/d/1vAZOufFaVmiPN5zhJVkD6Dn0n3OzIzH8PSAdcH85z50/edit?usp=sharing">
+                <a
+                  className={styles.cvLink}
+                  href="https://docs.google.com/document/d/1vAZOufFaVmiPN5zhJVkD6Dn0n3OzIzH8PSAdcH85z50/edit?usp=sharing"
+                >
+                  {' '}
                   CV
                 </a>
               </strong>

@@ -37,6 +37,32 @@
       grid-template-columns: min-content min-content;
       justify-content: center;
     }
+
+    a {
+      font-weight: normal;
+      font-family: sans-serif;
+      font-size: 14px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    a:hover, a:visited::hover {
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(23, 190, 187);
+        text-decoration: none;
+    }
+
+    a, a:visited {
+      color:rgb(255, 255, 255); 
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+
   </style>
 
   <body>
@@ -48,8 +74,10 @@
       </strong> page, but it's not here :(
     
     <h3>
-      It might be broken like so many dreams. Or it may have moved to Mars to enjoy a pandemic free life? In any case, please try returning to the home page.
+      It might be broken like so many dreams. Or it may have moved to Mars to enjoy a pandemic free life? In any case, 
     </h3>
+      <a href="https://laura-the.ninja/">
+      please try returning to the home page.</a>
 
     <div class="images">
       <div class="lamb">

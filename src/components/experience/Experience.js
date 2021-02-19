@@ -181,7 +181,7 @@ class Experience extends Component {
               <h2>Horticulture</h2>
             </div>
 
-            <div className={styles.backgroundImage}>
+            <div className={styles.hobbiesBackground}>
               <img
                 src="/images/about_me_hobbies_background.svg"
                 alt="monstera gloves and ps5 controller"
