@@ -17,7 +17,7 @@ class Error404Page extends Component {
             It might be broken like so many dreams. Or it may have moved to Mars
             to enjoy a pandemic free life? In any case,
           </h3>
-          <a href="https://laura-the.ninja/">
+          <a className={styles.link} href="https://laura-the.ninja/">
             please try returning to the home page.
           </a>
 
