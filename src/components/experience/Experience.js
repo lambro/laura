@@ -34,39 +34,36 @@ class Experience extends Component {
                 Hygiene and Tropical Medicine, London
               </h2>
               <h2>
-                BSc. (Honours) <b>Environmental Science</b> 2001 - 2005
-                Kings College London, University of London, London
+                BSc. (Honours) <b>Environmental Science</b> 2001 - 2005 Kings
+                College London, University of London, London
               </h2>
 
-            <img className={styles.arrows} src="/images/arrows_down_singular.png" alt="" />
-
+              <img
+                className={styles.arrows}
+                src="/images/arrows_down_singular.png"
+                alt=""
+              />
 
               <Parallax
                 className={styles.triangle}
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                x={[30, -30]}
+                y={[70, -70]}
                 slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
               <Parallax
                 className={styles.triangle2}
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                x={[30, -30]}
+                y={[70, -70]}
                 slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
               </Parallax>
               <Parallax
                 className={styles.triangle3}
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                x={[30, -30]}
+                y={[70, -70]}
                 slowerScrollRate={true}
               >
                 <img src="/images/triangle.svg" alt="triangle" />
@@ -92,8 +89,6 @@ class Experience extends Component {
                 React / Node.js / API communication / GraphQL Microservices
               </h2>
               <h2>Unit testing</h2>
-
-              
             </div>
 
             <div className={styles.right}>
@@ -111,7 +106,7 @@ class Experience extends Component {
               <h2>Unit testing</h2>
 
               <h2>
-                <b>Durable Digital</b> Junior Front End Developer
+                <b>Durable Digital</b> Front End Developer
               </h2>
               <h2>March 2015 - May 2016</h2>
               <h2>(1 year 3 months) London Front end engineering</h2>
@@ -120,7 +115,6 @@ class Experience extends Component {
                 Umbraco.
               </h2>
             </div>
-
           </div>
           <div className={styles.third}>
             <div className={styles.left}>
@@ -130,22 +124,24 @@ class Experience extends Component {
             <div className={styles.right}>
               <h2>
                 <b>JavaScript</b> I have been working with Javascript in various
-                forms since I began coding. Initially I worked on large projects using
-                Javascript, JQuery and AngularJS to display visuals using data
-                from our clients API. Following this I went on to work on a
-                social learning web app set in a Backbone-Marionette stack. More recently I worked on deployment software in React and Redux.
+                forms since I began coding. Initially I worked on large projects
+                using Javascript, JQuery and AngularJS to display visuals using
+                data from our clients API. Following this I went on to work on a
+                social learning web app set in a Backbone-Marionette stack. More
+                recently I worked on deployment software in React and Redux.
               </h2>
               <h2>
                 <b>Style</b> I have had a lot of experience with CSS throughout
                 my coding life, starting with the Front End course at GA and
-                throughout my career as a Front End developer. CSS has changed significantly over the years, now sometimes replacing the need for JavaScript. I
-                have used pure CSS, and preprocessors such as SASS, SCSS and
-                LESS. Experimenting with CSS is a lot of fun, and more recently
-                I have been playing with SVG design and animation. In my day
-                to day work life I build fully responsive pages and components
-               , working with designers to bring their flat designs to
-                life with animations and consideration of the full UX experience
-                on interactive platforms.
+                throughout my career as a Front End developer. CSS has changed
+                significantly over the years, now sometimes replacing the need
+                for JavaScript. I have used pure CSS, and preprocessors such as
+                SASS, SCSS and LESS. Experimenting with CSS is a lot of fun, and
+                more recently I have been playing with SVG design and animation.
+                In my day to day work life I build fully responsive pages and
+                components , working with designers to bring their flat designs
+                to life with animations and consideration of the full UX
+                experience on interactive platforms.
               </h2>
 
               <h2>
@@ -153,21 +149,22 @@ class Experience extends Component {
                 developers I have had valuable experience working with GIT on
                 collaborative projects and with Webpack, Circle CI, QA engineers
                 and unit testing as integral parts of my day to day work
-                processes. I have built production grade websites alone making efforts for good SEO and loading times.
+                processes. I have built production grade websites alone making
+                efforts for good SEO and loading times.
               </h2>
               <h2>
                 <b>Integration</b> As a front end developer integration and
                 collaboration with other developers is an essential skill, I
                 worked in a .NET stack at Durable, integrating with C# in
-                Umbraco and Sitecore CMS systems. Following this I went on to work with a full stack team at Fuse where we were integrating Ruby with Backbone Marionette.
-                My most recent experience was with a React stack at KintoHub, where we worked in microservices and a complete separation of interests.
-                The front end communicated with back end services exclusively via APIs, using REST at first and then via GraphQL.
-           
+                Umbraco and Sitecore CMS systems. Following this I went on to
+                work with a full stack team at Fuse where we were integrating
+                Ruby with Backbone Marionette. My most recent experience was
+                with a React stack at KintoHub, where we worked in microservices
+                and a complete separation of interests. The front end
+                communicated with back end services exclusively via APIs, using
+                REST at first and then via GraphQL.
               </h2>
-
-
             </div>
-
           </div>
           <div className={styles.fourth}>
             <div className={styles.left}>
@@ -183,8 +180,15 @@ class Experience extends Component {
               <h2>Yoga</h2>
               <h2>Horticulture</h2>
             </div>
+
+            <div className={styles.hobbiesBackground}>
+              <img
+                src="/images/about_me_hobbies_background.svg"
+                alt="monstera gloves and ps5 controller"
+              />
+            </div>
           </div>
-          </div>
+        </div>
       </div>
     )
   }

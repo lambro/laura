@@ -172,9 +172,10 @@
 
 .fourth {
   background-color: rgba(51, 51, 51, 1);
+  .hobbiesBackground {
+    display: none;
+  }
 }
-
-
 
 .arrows {
   display: none;
@@ -189,7 +190,6 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: 1;
 }
-
 
 @media (min-width: 1125px) {
   .arrows {
@@ -207,8 +207,6 @@
     right: 0;
     bottom: 0;
   }
-
-
 
   .left {
     padding-left: 10px;
@@ -238,5 +236,23 @@
 
   .right h2:last-child {
     margin-bottom: 0;
+  }
+
+  .fourth .right {
+    z-index: 2;
+    h2 {
+      background-color: rgba(51, 51, 51, 0.5);
+      width: max-content;
+    }
+  }
+  .fourth .hobbiesBackground {
+    display: block;
+    position: absolute;
+    transform: scale(2);
+    transform-origin: right top;
+    right: 0;
+    z-index: 1;
+    opacity: 0.7;
+    margin: 20px;
   }
 }

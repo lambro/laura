@@ -6,35 +6,51 @@ $green: rgba(27, 153, 139, 1)
   padding: 60px 40px 40px
   background-color: rgba(0, 0, 0, 1)
 
-.portfolio h2
+  .top
+    display: grid
+    grid-template-rows: min-content 20px min-content
+    padding: 60px 0
+    align-items: center
+    overflow: hidden
+    grid-row-gap: 30px
+  .line
+    width: 100%
+    background-color: rgba(205, 83, 52, 1)
+    height: 5px
+
+.portfolio h2, .scribble, .cubeHeading
   cursor: pointer
-  text-align: center
+  color: $lightGreen
+  align-self: center
 
 .titles
   display: grid
-  grid-template-columns: 1fr 1fr 1fr
-  justify-content: space-between
+  justify-content: center
+  align-content: center
+  grid-gap: 20px
   margin: 0px auto 0px
-  padding: 50px 0 120px
 
 .titles
   h2
     color: #ffffff
     position: relative
     transition: all 0.2s ease
+    text-align: center
     &.highlightedHeading
       color: $lightGreen
 
   h2:hover
     color: $lightGreen
-    .pathLeft
+    .pathSquareBottom
       animation: moveAround 7s ease infinite
-    .pathRight
+    .pathSquareTopRight
       animation: moveAroundRight 7s ease infinite
     .pathSquareTopLeft
       animation: moveSquareTopLeft 7s linear infinite
     .pathSquareTopSmall
       animation: moveSquareTopSmall 7s linear infinite
+    .pathSquareBottomSmall
+      animation: moveAround 7s linear infinite
 
 .heading:hover, .cubeHeading:hover
   .cube
@@ -45,23 +61,18 @@ $green: rgba(27, 153, 139, 1)
 .cubeHeading
   position: relative
 
-.pathLeft, .pathRight, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
+.pathSquareTopRight, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall
   position: absolute
   transform-origin: 50% 50%
 
-.pathLeft
-  bottom: 0
-  left: 20px
-  stroke: rgba(255, 255, 255, 0.5)
-
-.pathRight
+.pathSquareTopRight
   bottom: 0
   right: 20px
   stroke: rgba(255, 255, 255, 0.5)
 
 .pathSquareTopLeft
   top: 0
-  left: 100px
+  left: 0px
   fill: rgba(255, 255, 255, 0.5)
 
 .pathSquareTopSmall
@@ -76,7 +87,7 @@ $green: rgba(27, 153, 139, 1)
 
 .pathSquareBottomRight
   top: 10%
-  right: 25%
+  right: 0
   stroke: rgba(255, 255, 255, 0.5)
 
 .pathSquareBottomSmall
@@ -127,7 +138,7 @@ $green: rgba(27, 153, 139, 1)
   transform: translateZ(-50px) rotateX(180deg)
 
 .images
-  width: 60vw
+  width: 70vw
   margin: 0 auto
 
 .scribbles
@@ -135,16 +146,42 @@ $green: rgba(27, 153, 139, 1)
   position: absolute
   width: 150px
 
-.scribblesStatic
+.scribblesStatic, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall, .cube, .pathSquareTopRight
   display: none
 
 .scribbleOuter
   position: relative
 
+.gallery
+  display: grid
+  grid-template-rows: 20vh 20px max-content
+  grid-gap: 10px
+
 @media (min-width: 1125px)
 
-  .links
-    padding: 20px 0 20px
+  .top, .gallery
+    grid-template-columns: 20% 20px auto
+    min-height: calc(60vh - 160px)
+    align-items: center
+    overflow: hidden
+    grid-template-rows: auto
+    grid-gap: 0
+    h2
+      padding: 0
+    .line
+      height: 30vh
+      width: 5px
+      background-color: rgba(205, 83, 52, 1)
+
+  .gallery
+    align-items: start
+
+    .line
+      height: 95vh
+      background-color: $lightGreen
+
+  .links, .linksTests
+    padding: 10px 0 20px
     width: 100vw
     display: grid
     grid-template-columns: repeat(5, auto)
@@ -155,15 +192,31 @@ $green: rgba(27, 153, 139, 1)
     a
       font-size: 2em
 
+  .linksTests
+    padding: 10px 0 50px
+    grid-template-columns: repeat(3, auto)
+
+  .titles
+    grid-template-rows: repeat(3, 300px)
+    justify-content: start
+    margin: 0
+
+  .scribblesStatic, .pathSquareTopLeft, .pathSquareTopSmall, .pathSquareBottomRight, .pathSquareBottom, .pathSquareBottomSmall, .cube
+    display: block
+
   .scribblesStatic
     width: 200px
     height: 200px
-    display: block
     position: absolute
     top: 50%
     left: 50%
     margin-left: -100px
     margin-top: -100px
+
+  .scribbleOuter
+    display: flex
+    justify-content: center
+    align-content: center
 
   .scribbleOuter:hover
     .scribbles
@@ -187,76 +240,69 @@ $green: rgba(27, 153, 139, 1)
 
 @keyframes moveAround
   0%
-    left: 20px
-    bottom: 0
+
     transform: rotate(0deg)
     stroke: rgba(255, 255, 255, 0.5)
   25%
-    left: 120px
-    bottom: 80px
+
     stroke: rgba($lightGreen, 1)
 
   50%
-    left: 20px
-    bottom: 0
+
     stroke: rgba(255, 255, 255, 0.5)
 
   75%
-    left: 120px
-    bottom: -80px
+
     stroke: rgba($lightGreen, 1)
 
   100%
-    left: 20px
-    bottom: 0px
+
     transform: rotate(360deg)
     stroke: rgba(255, 255, 255, 0.5)
 
 @keyframes moveAroundRight
   0%
-    bottom: 0
-    right: 20px
-    transform: rotate(0deg)
-    stroke: rgba(255, 255, 255, 0.5)
-  25%
-    right: 120px
-    bottom: -80px
-    stroke: rgba($green, 1)
-  50%
-    right: 20px
-    bottom: 0
-    stroke: rgba(255, 255, 255, 0.5)
-  75%
-    right: 120px
-    bottom: 80px
-    stroke: rgba($green, 1)
-
-  100%
-    right: 20px
-    bottom: 0px
-    transform: rotate(360deg)
-    stroke: rgba(255, 255, 255, 0.5)
-
-@keyframes moveSquareTopLeft
-  0%
-    left: 100px
+    right: 0px
     transform: scale(1)
     fill: rgba(255, 255, 255, 0.5)
   25%
-    left: 110px
+    right: 10px
     fill: rgba($lightGreen, 1)
   50%
-    left: 100px
-    transform: scale(1.2)
-    top: 10px
+    right: 0px
+    transform: scale(1.5)
+    bottom: 30px
     fill: rgba(255, 255, 255, 0.5)
 
   75%
-    left: 90px
+    right: 20px
     fill: rgba($lightGreen, 1)
 
   100%
-    left: 100px
+    right: 0px
+    transform: scale(1)
+    fill: rgba(255, 255, 255, 0.5)
+
+@keyframes moveSquareTopLeft
+  0%
+    left: 0px
+    transform: scale(1.5)
+    fill: rgba(255, 255, 255, 0.5)
+  25%
+    left: 10px
+    fill: rgba($lightGreen, 1)
+  50%
+    left: 0px
+    transform: scale(1.2)
+    top: 30px
+    fill: rgba(255, 255, 255, 0.5)
+
+  75%
+    left: 20px
+    fill: rgba($lightGreen, 1)
+
+  100%
+    left: 0px
     transform: scale(1)
     fill: rgba(255, 255, 255, 0.5)
 
@@ -268,7 +314,7 @@ $green: rgba(27, 153, 139, 1)
     fill: rgba(255, 255, 255, 0.5)
   25%
     top: -125%
-    left: 40%
+    left: 20%
     fill: rgba($lightGreen, 1)
   50%
     top: -120%
@@ -278,7 +324,7 @@ $green: rgba(27, 153, 139, 1)
 
   75%
     top: -115%
-    left: 35%
+    left: 25%
     fill: rgba($lightGreen, 1)
 
   100%

@@ -5,10 +5,12 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
+import ScrollToTop from './ScrollToTop'
 
 ReactDOM.render(
   <Router>
     <ParallaxProvider>
+      <ScrollToTop />
       <App />
     </ParallaxProvider>
   </Router>,

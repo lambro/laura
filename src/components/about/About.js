@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 import posed from 'react-pose'
 import styles from './About.module.scss'
 import { Parallax } from 'react-scroll-parallax'
+import laura from './laura2.png'
+import daytoday from './daytoday.jpg'
+import junk from './junk.jpg'
+import boxing from './boxing.jpg'
+import kintohub from './kintohub.jpg'
+import skiing from './skiing.jpg'
 
 const Container = posed.div({
   enter: { staggerChildren: 50 }
@@ -11,7 +17,6 @@ class About extends Component {
   render() {
     return (
       <Container>
-
         {/* top section */}
         <div className={styles.aboutMe}>
           <div>
@@ -24,7 +29,8 @@ class About extends Component {
             </h2>
             <h2>A Master of Science.</h2>
             <h2>
-              Concurrently a lover of, and allergic to, <strong>cats </strong>and<strong> Nutella</strong>.
+              Concurrently a lover of, and allergic to, <strong>cats </strong>
+              and<strong> Nutella</strong>.
             </h2>
             <h2>
               Member of the <strong>console</strong> underclass.
@@ -34,11 +40,7 @@ class About extends Component {
             </h2>
           </div>
           <div className={styles.imageInSvgMobile}>
-            <Parallax
-              className={styles.border}
-              offsetXMax={100}
-              offsetXMin={-100}
-            >
+            <Parallax x={[100, -100]} className={styles.border}>
               <svg height="200" width="200">
                 <polygon
                   id="triangleMobile"
@@ -55,15 +57,9 @@ class About extends Component {
               </svg>
             </Parallax>
 
-            <Parallax>
-              <img src="/images/laura2.png" className={styles.clipped} alt="" />
-            </Parallax>
+            <img src={laura} className={styles.clipped} alt="" />
 
-            <Parallax
-              offsetXMax={200}
-              className={styles.border1}
-              offsetXMin={-200}
-            >
+            <Parallax x={[200, -200]} className={styles.border1}>
               <svg height="300" width="300">
                 <polygon
                   id="triangleTopMobile"
@@ -80,13 +76,9 @@ class About extends Component {
               </svg>
             </Parallax>
           </div>
-     
+
           <div className={styles.imageInSvg}>
-            <Parallax
-              className={styles.border}
-              offsetXMax={100}
-              offsetXMin={-100}
-            >
+            <Parallax className={styles.border} x={[-80, 100]}>
               <svg height="360" width="360">
                 <polygon
                   id="triangle"
@@ -102,16 +94,8 @@ class About extends Component {
                 />
               </svg>
             </Parallax>
-
-            <Parallax>
-              <img src="/images/laura2.png" className={styles.clipped} alt="" />
-            </Parallax>
-
-            <Parallax
-              offsetXMax={-200}
-              className={styles.border1}
-              offsetXMin={-100}
-            >
+            <img src={laura} className={styles.clipped} alt="" />
+            <Parallax x={[0, -120]} className={styles.border1}>
               <svg height="460" width="460">
                 <polygon
                   id="triangleTop"
@@ -130,121 +114,62 @@ class About extends Component {
           </div>
         </div>
 
-      
-   
         <div className={styles.fifth}>
-          {/* <div className={styles.images}>
+          <img
+            src="/images/backgroundLines.svg"
+            alt="background lines"
+            className={styles.arrowLine}
+          />
 
-            <Parallax 
-            offsetXMax={100}
-            offsetXMin={-100}
-            >
-            <img src="/images/about/hiking.jpg" className={styles.clipped} alt="" />
-            <img src="/images/about/sanfransisco.jpg" className={styles.clippedSF} alt="" />
-            <img src="/images/about/gloves.jpg" className={styles.clippedBoxing} alt="" />
-            
-            </Parallax>
-          </div> */}
-         
           <div className={styles.images}>
-
-          <Parallax
-              offsetXMax={1000}
-              className={styles.littleBorder}
-              offsetXMin={0}
-              offsetYMax={100}
-              offsetYMin={-200}
-            >
-              <svg height="100" width="100">
-                <polygon
-                  id="littleTriangle"
-                  points="45, 5, 5, 90, 90, 90"
-                  className={styles.path2}
-                  style={{
-                    stroke: 'rgba(205, 83, 52, 1)',
-                    strokeWidth: 5,
-                    strokeLinejoin: 'round',
-                    strokeLinecap: 'round',
-                    fill: 'none'
-                  }}
-                />
-              </svg>
-            </Parallax>
-
-
-            <Parallax 
-              offsetXMax={-100}
-            offsetXMin={100}
-            >
-              <img src="/images/about/junji.jpg" className={styles.clippedInverted} alt="" />
-              <img src="/images/about/daytoday.jpg" className={styles.clippedPortrait} alt="" />
-              <img src="/images/about/junk.jpg" className={styles.clippedInverted} alt="" />
-              <img src="/images/about/boxing.jpg" className={styles.clippedPortraitInverted} alt="" />
-              <img src="/images/about/kintohub.jpg" className={styles.clippedKinto} alt="" />
-              <img src="/images/about/skiing.jpg" className={styles.clippedPortrait} alt="" />
-          
+            <Parallax x={[100, -100]}>
+              <img src={daytoday} className={styles.clippedPortrait} alt="" />
+              <img src={junk} className={styles.clippedInverted} alt="" />
+              <img
+                src={boxing}
+                className={styles.clippedPortraitInverted}
+                alt=""
+              />
+              <img src={kintohub} className={styles.clippedKinto} alt="" />
+              <img src={skiing} className={styles.clippedPortrait} alt="" />
             </Parallax>
           </div>
-
-          {/* <div className={styles.images}>
-
-            <Parallax 
-            offsetXMax={200}
-            offsetXMin={-100}
-            >
-            >
-              <img src="/images/about/painting.jpg" className={styles.clippedPortraitInverted} alt="" />
-              <img src="/images/about/morehiking.jpg" className={styles.clippedInverted} alt="" />
-              
-        
-              <img src="/images/about/purple.jpeg" className={styles.clippedPortrait} alt="" />
-              <img src="/images/about/plants.jpg" className={styles.clippedInverted} alt="" />
-      
-            
-            </Parallax>
-          </div> */}
         </div>
-       
 
         <div className={styles.sectionMyLife}>
           <h1>The Details</h1>
           <div className={styles.theBorderLine}>
-            <Parallax
-              offsetYMax={200}
-              offsetYMin={-200}
-              offsetXMax={0}
-              offsetXMin={0}
-            >
+            <Parallax y={[100, -100]}>
               <div className={styles.line} />
             </Parallax>
           </div>
           <div className={styles.textualInformation}>
             <h4>
-              After graduating from the London School of Hygiene
-              and Tropical Medicine, I decided to take some time out abroad. I moved to Korea, where I taught English at first. 
-              While I was doing this I had a scooter accident, which scared me into squeezing more out of my day to day life.
+              After graduating from the London School of Hygiene and Tropical
+              Medicine, I decided to take some time out abroad. I moved to
+              Korea, where I taught English at first. While I was doing this I
+              had a scooter accident, which scared me into squeezing more out of
+              my day to day life.
             </h4>
             <h4>
               I made an effort to get into jobs that I would wake up in the
               morning and look forward to going in to do, first at advertising
-              agencies, then modelling, DJing, TV work and
-              playing bass guitar in a band.
+              agencies, then modelling, DJing, TV work and playing bass guitar
+              in a band.
             </h4>
             <h4>
-              I then decided to return to London and, after a year back acclimatising, started
-              experimenting with coding and Ruby on the advice of many of my
-              close friends, who described me as a "massive geek who just didn't
-              know it yet". 
-              I found coding enjoyable and decided that I wanted to do it everyday, so took steps to make this part
-              of my life and work with my courses at General Assembly. It has now
-              been years since I typed my first lines of code and I am still happy I
-              made the leap. Coding never gets boring and I always have
-              something new to play with.
+              I then decided to return to London and, after a year back
+              acclimatising, started experimenting with coding and Ruby on the
+              advice of many of my close friends, who described me as a "massive
+              geek who just didn't know it yet". I found coding enjoyable and
+              decided that I wanted to do it everyday, so took steps to make
+              this part of my life and work with my courses at General Assembly.
+              It has now been years since I typed my first lines of code and I
+              am still happy I made the leap. Coding never gets boring and I
+              always have something new to play with.
             </h4>
           </div>
         </div>
-        
-     
       </Container>
     )
   }

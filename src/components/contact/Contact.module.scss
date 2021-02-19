@@ -1,14 +1,38 @@
+$lightGreen: rgba(23, 190, 187, 1);
+
 .contact {
-  height: calc(100vh - 40px);
   margin-top: 40px;
   background-color: rgba(0, 0, 0, 1);
   display: grid;
   align-content: stretch;
   padding: 10px;
-  grid-gap: 80px;
   grid-template-rows: min-content 1fr 20px;
 }
 
+a.cvLink {
+  color: $lightGreen;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: min-content 20px min-content;
+  padding: 60px 40px;
+  align-items: center;
+  overflow: hidden;
+  grid-row-gap: 30px;
+  .line {
+    width: 100%;
+    background-color: rgba(205, 83, 52, 1);
+    height: 5px;
+  }
+}
+
+.attribution {
+  height: 40px;
+  line-height: 40px;
+  border-top: solid 1px rgba(255, 255, 255, 0.3);
+  align-self: end;
+}
 .attribution,
 .attribution a {
   color: rgba(255, 255, 255, 0.5);
@@ -20,12 +44,28 @@
   color: #ffffff;
 }
 
+.contact h4 {
+  font-weight: normal;
+  text-align: left;
+  line-height: 50px;
+  strong {
+    font-size: 1.5em;
+    color: $lightGreen;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+  }
+}
+
 .logos {
   display: grid;
   width: 100%;
   grid-template-rows: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
+  grid-row-gap: 20px;
+
   a {
     display: block;
     position: relative;
@@ -44,13 +84,20 @@
 
 @media (min-width: 1125px) {
   .contact {
-    grid-template-rows: 1fr 1fr 20px;
-    grid-gap: 0;
+    height: calc(100vh - 40px);
+    grid-template-rows: auto auto;
+    align-items: stretch;
+
+    h4 {
+      text-align: left;
+      padding-right: 20px;
+    }
   }
   .logos {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     justify-items: center;
     a {
       display: inline-block;
@@ -71,6 +118,19 @@
       top: -30px;
       height: 120px;
       left: -30px;
+    }
+  }
+  .main {
+    grid-template-columns: 20% 20px 1fr;
+    height: calc(100vh - 160px);
+    padding: 40px;
+    align-items: center;
+    overflow: hidden;
+    grid-template-rows: auto;
+    .line {
+      height: 60vh;
+      width: 5px;
+      background-color: rgba(205, 83, 52, 1);
     }
   }
 }
