@@ -23,10 +23,10 @@ class Experience extends Component {
               </h2>
               <h2>
                 More recently I was the sole Front End Developer working with
-                the most recent <b>ES9</b> JS version on deployment software. I
-                used <b>NodeJS</b>, <b>React and Redux</b> for our webapp while
-                also building and maintaining our promotional website which was
-                built in Gatsby.
+                <b>ES9</b> JS version on deployment software. I used{' '}
+                <b>NodeJS</b>, <b>React and Redux</b> for our webapp while also
+                building and maintaining our promotional website which was built
+                in Gatsby.
               </h2>
               <h2>
                 <b>Style</b> I have had a lot of experience with CSS throughout
