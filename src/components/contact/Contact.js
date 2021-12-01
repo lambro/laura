@@ -14,11 +14,12 @@ class Contact extends Component {
             <h1>Contact</h1>
 
             <h4>
-              I am based <strong>in Singapore</strong> and{' '}
-              <strong>available for hire </strong>
+              I am based {'  '}<strong> in Singapore</strong> <br />
+              and currently employed by{' '}
+              <br /><strong>UBISOFT SINGAPORE </strong>
             </h4>
 
-            <h4>
+            {/* <h4>
               <strong>
                 <a
                   className={styles.cvLink}
@@ -37,7 +38,7 @@ class Contact extends Component {
                   CV
                 </a>
               </strong>
-            </h4>
+            </h4> */}
 
             <h4> You can find me in all the usual places.</h4>
           </div>

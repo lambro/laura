@@ -160,7 +160,7 @@ class Portfolio extends Component {
                     : ''
                 }
               >
-                Isometric and 3D
+                IRL, Isometric and 3D
               </h2>
             </div>
           </div>

@@ -22,11 +22,10 @@ class Experience extends Component {
                 set in a Backbone-Marionette stack.
               </h2>
               <h2>
-                More recently I was the sole Front End Developer working with
-                <b>ES9</b> JS version on deployment software. I used{' '}
-                <b>NodeJS</b>, <b>React and Redux</b> for our webapp while also
-                building and maintaining our promotional website which was built
-                in Gatsby.
+                More recently I was the sole Front End Developer working with{' '}
+                <b>ES9</b> on deployment software. I used <b>NodeJS</b>,{' '}
+                <b>React and Redux</b> for our webapp while also building and
+                maintaining our promotional website which was built in Gatsby.
               </h2>
               <h2>
                 <b>Style</b> I have had a lot of experience with CSS throughout
@@ -59,7 +58,7 @@ class Experience extends Component {
                 Ruby with Backbone Marionette. My most recent experience was
                 with a React stack at KintoHub, where we worked in microservices
                 and a complete separation of interests. The front end
-                communicated with back end services exclusively via APIs, using
+                communicated with back end services exclusively via APIs, using {' '}
                 <b>REST</b> at first and then via <b>GraphQL</b>.
               </h2>
             </div>
@@ -70,6 +69,21 @@ class Experience extends Component {
               <h1>Experience</h1>
             </div>
             <div className={styles.line2} />
+
+            <div className={styles.right}>
+              <h2 className={styles.country}>
+                <b>SINGAPORE</b>
+              </h2>
+              <h2>
+                <b>Ubisoft</b> Web Developer
+              </h2>
+              <h2>June 2021 - Present</h2>
+              <h2>HTML / JSX / JS / SCSS </h2>
+              <h2>
+                React / API communication / LIT Element
+              </h2>
+              <h2>Unit testing</h2>
+            </div>
 
             <div className={styles.right}>
               <h2 className={styles.country}>
@@ -84,9 +98,7 @@ class Experience extends Component {
                 React / Node.js / API communication / GraphQL Microservices
               </h2>
               <h2>Unit testing</h2>
-            </div>
 
-            <div className={styles.right}>
               <h2 className={styles.country}>
                 <b>LONDON</b>
               </h2>
